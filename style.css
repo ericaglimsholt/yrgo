@@ -1,1 +1,50 @@
 img.startpage-img{width:100%}
+
+/*s-header*/
+.s-header-background {
+  height: 526px;
+  background-size: cover;
+}
+
+.s-header-CenterContent {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.s-header-CenterContent img {
+  height: 149px;
+  width: 500px;
+  right: 50px;
+
+}
+
+.s-header-CenterContent p{
+  font-family: GravurCondensed-Regular;
+  font-size: 72px;
+  color: #FFFFFF;
+}
+
+/*s-links*/
+
+
+
+.red {
+  height: 526px;
+  background: red;
+  border: 1px solid black;
+}
+.blue {
+  height: 280px;
+  background: blue;
+}
+.green {
+  height: 280px;
+  background: green;
+}
+.orange {
+  height: 280px;
+  background: orange;
+}

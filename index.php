@@ -14,6 +14,8 @@ get_header();
 
 ACFListener::fields('yrgo');
 ACFListener::fields('studentweb');
+ACFListener::fields('n-news');
+
 
 
 

@@ -9,6 +9,9 @@ require get_template_directory().'/post-types/yrgo.php';
 // Register studentwebben custom post type.
 require get_template_directory().'/post-types/studentWebben.php';
 
+// Register news custom post type.
+require get_template_directory().'/post-types/news.php';
+
 
 	require_once('inc/acf/setup.php');
 	function addMyStyle() {

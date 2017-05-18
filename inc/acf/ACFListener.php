@@ -13,6 +13,8 @@
 					while( have_rows($field) ) {
 						the_row();
 						$init_file = get_template_directory() . '/acf-layouts/'.get_row_layout().'/init.php';
+						// $init_file = glob(get_template_directory() . '/acf-layouts/*init.php');
+
 						if(file_exists($init_file)) {
 							include($init_file);
 						} else {
