@@ -1,6 +1,6 @@
 <?php $educations = get_posts([
   'post_type' => 'education',
-  'order' => 'DESC',
+  'order' => 'ASC',
   'orderby' => 'name'
 ]); ?>
 
