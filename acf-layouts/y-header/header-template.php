@@ -1,3 +1,9 @@
+<?php $educations = get_posts([
+  'post_type' => 'education',
+  'order' => 'ASC',
+  'orderby' => 'name'
+]); ?>
+
 <!-- Closes container div -->
 </div>
 
@@ -10,10 +16,9 @@
       <h2 class="start"><?= $this->getStartTitle() ?></h2>
 
       <ul>
-        <?php if( have_rows('header_areas') ): ?>
-          <?php while( have_rows('header_areas') ): the_row();   ?>
-            <li><?= get_sub_field('area') ?></li>
-        <?php endwhile; endif?>
+        <?php foreach ($educations as $education): ?>
+            <li><?php echo $education->post_title ?></li>
+        <?php endforeach; ?>
       </ul>
 
 
