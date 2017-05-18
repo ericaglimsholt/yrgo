@@ -1,4 +1,8 @@
-img.startpage-img{width:100%}
+@font-face{
+  font-family: 'Gravur';
+  src: url('assets/fonts/GravurCondensed-Regular.otf') format('opentype');
+}
+
 
 /*s-header*/
 .s-header-background {
@@ -22,20 +26,76 @@ img.startpage-img{width:100%}
 }
 
 .s-header-CenterContent p{
-  font-family: GravurCondensed-Regular;
+  font-family: Gravur;
   font-size: 72px;
   color: #FFFFFF;
+  font-family: 'Gravur';
 }
 
 /*s-links*/
+.s-links-CenterContent {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 526px;
+}
+
+.s-links-CenterContent h2 {
+  font-family: Gravur;
+  color: #FFFFFF;
+}
+
+
+/*s-news*/
+.s-news {
+  font-family: Gravur;
+  color: #FFFFFF;
+}
+
+.s-news p {
+  margin-top: 5%;
+  font-size: 72px;
+  color: #F52A3B;
+}
+
+/*s-follow*/
+.s-follow-background {
+  height: 526px;
+  background-size: cover;
+}
+
+.s-follow {
+  font-family: Gravur;
+  color: #FFFFFF;
+}
+
+.s-follow p {
+  margin-top: 5%;
+  font-size: 72px;
+}
+
+.s-follow-CenterContent {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.s-split {
+  display: flex;
+  justify-content: space-between;
+}
 
 
 
 .red {
-  height: 526px;
+  height: 200px;
+  width: 200px;
   background: red;
   border: 1px solid black;
 }
+
 .blue {
   height: 280px;
   background: blue;
