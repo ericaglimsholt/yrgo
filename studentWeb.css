@@ -121,13 +121,15 @@
   font-family: Calibri;
   font-size: 18px;
   line-height: 26px;
+  margin-top: 60px;
+  margin-bottom: 60px;
+
 }
 
 .s-newsContent .headline{
   font-family: Gravur;
   font-size: 47px;
   color: #F52A3B;
-  margin-top: 60px;
   margin-bottom: 30px;
 }
 
