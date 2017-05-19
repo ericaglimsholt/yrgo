@@ -53,11 +53,36 @@
   color: #FFFFFF;
 }
 
-.s-news p {
+.s-news-header {
   margin-top: 5%;
   font-size: 72px;
   color: #F52A3B;
 }
+
+.s-news-list p{
+  margin: 0px;
+}
+
+.s-news-list {
+  margin-bottom: 40px;
+}
+
+
+.s-news-list-header {
+  font-size: 47px;
+}
+
+.s-news-list a{
+  text-decoration: none;
+  color: #FFFFFF;
+}
+
+.s-news-list a:hover {
+  text-decoration: none;
+  color: #F52A3B;
+}
+
+
 
 /*s-follow*/
 .s-follow-background {

@@ -4,13 +4,20 @@ class News extends ACFModule {
         return 'news-template.php';
     }
 
-
   public function setHeadlineField($headline) {
     $this->headline = $headline ;
   }
 
   public function getHeadlineField(){
     return $this->headline;
+  }
+
+  public function setImgField($img) {
+    $this->img = $img ;
+  }
+
+  public function getImgField(){
+    return $this->img;
   }
 
   public function setContentField($content) {

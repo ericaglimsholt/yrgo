@@ -16,12 +16,12 @@
     <div class="s-header-background col-md-12" style="background-image:url(<?= $this->getBackgroundImg() ?>);">
 
       <div class="container s-news">
-        <p class=" s-news-header">NYHETER</p>
+        <p class="s-news-header">NYHETER</p>
 
           <?php foreach ($educations as $education): ?>
             <div class="s-news-list">
               <p class="s-news-list-header"><?php echo $education->post_title ?></p>
-              <p>----</p>
+              <p>-</p>
               <a href="<?php echo $education->guid ?>"><p>Läs mer</p></a>
             </div>
 
