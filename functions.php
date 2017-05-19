@@ -22,6 +22,8 @@ add_action('wp_head', 'addMyStyle');
 
 function custom_style_sheet() {
 wp_enqueue_style( 'custom-styling', get_stylesheet_directory_uri() . '/yrgo.css' );
+wp_enqueue_style( 'studentWeb-styling', get_stylesheet_directory_uri() . '/studentWeb.css' );
+
 }
 add_action('wp_enqueue_scripts', 'custom_style_sheet');
 
