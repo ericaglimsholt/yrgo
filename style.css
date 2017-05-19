@@ -59,6 +59,7 @@
   color: #F52A3B;
 }
 
+<<<<<<< HEAD
 .s-news-list p{
   margin: 0px;
 }
@@ -70,11 +71,19 @@
 
 .s-news-list-header {
   font-size: 47px;
+=======
+.s-news-list {
+  margin-bottom: 50px;
+>>>>>>> c8905bda429c6d53674522f629e10f5d815d2437
 }
 
 .s-news-list a{
   text-decoration: none;
   color: #FFFFFF;
+<<<<<<< HEAD
+=======
+  margin: 0px;
+>>>>>>> c8905bda429c6d53674522f629e10f5d815d2437
 }
 
 .s-news-list a:hover {
@@ -82,6 +91,14 @@
   color: #F52A3B;
 }
 
+<<<<<<< HEAD
+=======
+.s-news-list-header{
+  font-size: 47px;
+  margin-bottom: 0px;
+}
+
+>>>>>>> c8905bda429c6d53674522f629e10f5d815d2437
 
 
 /*s-follow*/

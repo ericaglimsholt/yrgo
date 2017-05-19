@@ -15,9 +15,15 @@ require get_template_directory().'/post-types/news.php';
 
 	require_once('inc/acf/setup.php');
 	function addMyStyle() {
-    wp_enqueue_style( 'my-style', get_template_directory_uri() . '/sass/style.css', '1', false, 'all' );
+    wp_enqueue_style( 'yrgo', get_template_directory_uri() . 'yrgo.css', '1', false, 'all' );
+		wp_enqueue_style( 'yrgo', get_stylesheet_uri() );
 }
 add_action('wp_head', 'addMyStyle');
+
+function custom_style_sheet() {
+wp_enqueue_style( 'custom-styling', get_stylesheet_directory_uri() . '/yrgo.css' );
+}
+add_action('wp_enqueue_scripts', 'custom_style_sheet');
 
 
 // hide menue
