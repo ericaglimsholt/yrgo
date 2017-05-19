@@ -30,7 +30,7 @@ $educations = get_posts( array (
               <li class="category"><?php echo $category->name ?></li>
 
           <?php endforeach; ?>
-          <h2><?php echo $categories[0]->cat_ID ?></h2>
+          
         </ul>
 
       </div>
@@ -38,7 +38,7 @@ $educations = get_posts( array (
         <ul>
           <?php foreach ($educations as $education): ?>
               <li class="education"><?php echo $education->post_title ?></li>
-              <h2> <?php echo $categories->IDs ?></h2>
+
           <?php endforeach; ?>
         </ul>
 
