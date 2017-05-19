@@ -4,10 +4,9 @@
 <?php $educations = get_posts([
   'post_type' => 'news',
   'order' => 'ASC',
+  'posts_per_page' => $this->getNewsHeadlinesField(),
   'orderby' => 'name'
 ]); ?>
-
-
 
 <div class="container-fluid">
 
@@ -19,6 +18,8 @@
         <p class="s-news-header">NYHETER</p>
 
           <?php foreach ($educations as $education): ?>
+            <?php if ($this->getNewsHeadlinesField()): ?>
+
             <div class="s-news-list">
               <p class="s-news-list-header"><?php echo $education->post_title ?></p>
               <p>-</p>
@@ -30,7 +31,7 @@
             </div>
 
 
-          <?php endforeach; ?>
+          <?php endif; endforeach; ?>
 
       </div>
 

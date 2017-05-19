@@ -11,4 +11,13 @@ class News extends ACFModule {
       return $this->backgroundImg;
     }
 
+    public function setNewsHeadlinesField($newsHeadlines) {
+      $this->newsHeadlines = $newsHeadlines;
+    }
+
+    public function getNewsHeadlinesField(){
+      return $this->newsHeadlines;
+    }
+
+
 }
