@@ -21,7 +21,7 @@
           <?php foreach ($educations as $education): ?>
             <div class="s-news-list">
               <p class="s-news-list-header"><?php echo $education->post_title ?></p>
-              <p>-</p>
+              <p>----</p>
               <a href="<?php echo $education->guid ?>"><p>Läs mer</p></a>
             </div>
 
