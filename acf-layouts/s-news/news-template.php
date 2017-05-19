@@ -4,6 +4,7 @@
 <?php $educations = get_posts([
   'post_type' => 'news',
   'order' => 'ASC',
+  'posts_per_page' => '2',
   'orderby' => 'name'
 ]); ?>
 
