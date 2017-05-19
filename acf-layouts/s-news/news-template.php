@@ -22,7 +22,11 @@
             <div class="s-news-list">
               <p class="s-news-list-header"><?php echo $education->post_title ?></p>
               <p>-</p>
-              <a href="<?php echo $education->guid ?>"><p>Läs mer</p></a>
+
+              <!-- FIX URL UNDER THIS TEXT!!! -->
+              <!-- Send url and id to newsContent -->
+              <a href="<?php echo add_query_arg( 'ID', $education->ID, 'http://localhost:3000/?studentwebben=nyhet' ); ?>"><p>Läs mer</p></a>
+
             </div>
 
 
