@@ -1,10 +1,3 @@
-<?php
-$pages = array (
-  'sort_order' => 'asc',
-  'sort_column' => 'post_date'
-)
-?>
-
 <!DOCTYPE html>
 <html>
     <head>
