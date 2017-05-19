@@ -13,5 +13,6 @@ add_action('init', function () {
         'menu_icon' => 'dashicons-welcome-learn-more',
         'menu_position' => 10,
         'public' => true,
+        'taxonomies'  => array( 'category' ),
     ]);
 });
