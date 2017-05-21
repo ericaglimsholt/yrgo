@@ -5,4 +5,6 @@ $links = new Links;
 $links->background = get_sub_field('background');
 $links->headline = get_sub_field('headline');
 $links->opacityColor = get_sub_field('opacity-color');
+$links->link = get_sub_field('link');
+
 $links->printHTMl();

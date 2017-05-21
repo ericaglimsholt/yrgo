@@ -20,6 +20,14 @@ class Links extends ACFModule {
     return $this->headline;
   }
 
+  public function setLinkField($link) {
+    $this->link = $link ;
+  }
+
+  public function getLinkField(){
+    return $this->link;
+  }
+
   public function setOpacityColor($opacityColor) {
     $this->opacityColor = $opacityColor;
   }
