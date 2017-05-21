@@ -12,6 +12,9 @@ require get_template_directory().'/post-types/studentWebben.php';
 // Register news custom post type.
 require get_template_directory().'/post-types/news.php';
 
+// Register Activities custom post type.
+require get_template_directory().'/post-types/activities.php';
+
 
 	require_once('inc/acf/setup.php');
 	function addMyStyle() {
