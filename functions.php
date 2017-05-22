@@ -16,12 +16,13 @@ require get_template_directory().'/post-types/news.php';
 require get_template_directory().'/post-types/activities.php';
 
 
-	require_once('inc/acf/setup.php');
-	function addMyStyle() {
-    wp_enqueue_style( 'yrgo', get_template_directory_uri() . 'yrgo.css', '1', false, 'all' );
-		wp_enqueue_style( 'yrgo', get_stylesheet_uri() );
-}
-add_action('wp_head', 'addMyStyle');
+require_once('inc/acf/setup.php');
+
+// function addMyStyle() {
+//     wp_enqueue_style( 'yrgo', get_template_directory_uri() . 'yrgo.css', '1', false, 'all' );
+// 		wp_enqueue_style( 'yrgo', get_stylesheet_uri() );
+// }
+// add_action('wp_head', 'addMyStyle');
 
 function custom_style_sheet() {
 wp_enqueue_style( 'custom-styling', get_stylesheet_directory_uri() . '/yrgo.css' );
@@ -50,9 +51,8 @@ function register_my_menus() {
 }
 add_action( 'init', 'register_my_menus' );
 
-
+// Get to add static page to a post type 
 add_filter( 'get_pages',  'add_my_cpt' );
-
 function add_my_cpt( $pages )
 {
      $my_cpt_pages = new WP_Query( array( 'post_type' => 'yrgo' ) );
