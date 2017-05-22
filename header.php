@@ -18,6 +18,9 @@
     </head>
     <body>
 
+<?php wp_nav_menu( array( 'theme_location' => 'studentWeb' ) ); ?>
+
+
 <nav class="navbar navbar-toggleable-md navbar-light bg-faded">
 
   <!-- Menu for mobile -->
@@ -54,7 +57,6 @@
       <div class="">
 
       </div>
-
 
 <!-- Start of container div, ends in footer.php -->
 <div class="container">
