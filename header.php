@@ -29,6 +29,8 @@ $yrgo = array(
     <body>
 
 
+<!-- chose meny based on page -->
+<?php ($wp_query->post->post_type == 'studentwebben')? $page = 'studentWeb' : $page = $wp_query->post->post_type;?>
 
 
 <nav class="navbar navbar-toggleable-md navbar-light bg-faded">
@@ -45,9 +47,23 @@ $yrgo = array(
       <img class="logotype-image" src="<?php echo get_template_directory_uri() ?>/assets/img/yrgo-nav.png"/>
     </a>
 
+
+      <?php
+        // loops all menu titles
+         wp_nav_menu( array(
+           'theme_location' => $page,
+           'menu_class' => 'navbar-nav mr-auto', // add classes to ui
+           'container_class' => 'collapse navbar-collapse', //add class to div
+           'container_id' => 'navbarSupportedContent', //add id to div
+           'echo'=> true,
+          ) );
+      ?>
+
+
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <?php wp_nav_menu($yrgo);?>
     </div>
+
 
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <img class="search-image" src="<?php echo get_template_directory_uri() ?>/assets/img/search.svg"/>
