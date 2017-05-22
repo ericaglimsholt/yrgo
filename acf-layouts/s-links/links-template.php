@@ -10,9 +10,6 @@
         <div class="col-6 s-links-CenterContent" style="background-image:url(<?= get_sub_field('background') ?>);">
           <h2><?= get_sub_field('headline') ?></h2>
           <a href="<?= get_sub_field('link') ?>"><p>Läs mer</p></a>
-
-          <h2><?= get_sub_field('link') ?></h2>
-
         </div>
 
     <?php endwhile; endif?>
