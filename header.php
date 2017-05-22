@@ -1,3 +1,13 @@
+<?php
+$yrgo = array(
+  'menu'            => 'Yrgo',
+  'container'       => 'container',
+  'container_class' => 'container_class',
+  'container_id'    => 'container_id',
+  'menu_class'      => 'nav navbar-nav',
+  'menu_id'         => 'menu_id',
+  'echo'            => true);
+?>
 
 <!DOCTYPE html>
 <html>
@@ -18,8 +28,10 @@
     </head>
     <body>
 
+
 <!-- chose meny based on page -->
 <?php ($wp_query->post->post_type == 'studentwebben')? $page = 'studentWeb' : $page = $wp_query->post->post_type;?>
+
 
 <nav class="navbar navbar-toggleable-md navbar-light bg-faded">
 
@@ -35,6 +47,7 @@
       <img class="logotype-image" src="<?php echo get_template_directory_uri() ?>/assets/img/yrgo-nav.png"/>
     </a>
 
+
       <?php
         // loops all menu titles
          wp_nav_menu( array(
@@ -47,10 +60,33 @@
       ?>
 
 
-    <!-- <form class="form-inline my-2 my-lg-0">
-      <input class="form-control mr-sm-2" type="text" placeholder="Search">
-      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-    </form> -->
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <?php wp_nav_menu($yrgo);?>
+    </div>
+
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <img class="search-image" src="<?php echo get_template_directory_uri() ?>/assets/img/search.svg"/>
+      <ul class="navbar-nav  ml-auto">
+
+
+
+        <li class="nav-item">
+          <a href="#">Studentwebb</a>
+        </li>
+        <li class="nav-item">
+          <a href="#">Bara text</a>
+        </li>
+        <li class="nav-item ">
+          <a href="#">SVE</a>
+        </li>
+        <li class="nav-item">
+          <a class="not-active" href="#">ENG</a>
+        </li>
+      </ul>
+    </div>
+
+
   </div>
 </nav>
       <div class="">
