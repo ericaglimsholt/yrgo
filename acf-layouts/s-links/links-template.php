@@ -2,7 +2,7 @@
 </div>
 
 <div class="container-fluid">
-  <div class="row">
+  <div class="row marginTop">
 
     <?php if( have_rows('links') ): ?>
       <?php while( have_rows('links') ): the_row();   ?>
