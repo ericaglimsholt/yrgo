@@ -26,14 +26,14 @@ add_action('wp_head', 'addMyStyle');
 function custom_style_sheet() {
 wp_enqueue_style( 'custom-styling', get_stylesheet_directory_uri() . '/yrgo.css' );
 wp_enqueue_style( 'studentWeb-styling', get_stylesheet_directory_uri() . '/studentWeb.css' );
-
+wp_enqueue_style( 'style', get_stylesheet_directory_uri() . '/style.css' );
 }
 add_action('wp_enqueue_scripts', 'custom_style_sheet');
 
 
 // hide menue
 function remove_menus(){
-  remove_menu_page( 'edit.php?post_type=page' );    //Pages
+  // remove_menu_page( 'edit.php?post_type=page' );    //Pages
 	remove_menu_page( 'edit.php' );    //Posts
 	remove_menu_page( 'edit-comments.php' );          //Comments
 }
@@ -49,3 +49,16 @@ function register_my_menus() {
   );
 }
 add_action( 'init', 'register_my_menus' );
+
+
+add_filter( 'get_pages',  'add_my_cpt' );
+
+function add_my_cpt( $pages )
+{
+     $my_cpt_pages = new WP_Query( array( 'post_type' => 'yrgo' ) );
+     if ( $my_cpt_pages->post_count > 0 )
+     {
+         $pages = array_merge( $pages, $my_cpt_pages->posts );
+     }
+     return $pages;
+}

@@ -5,7 +5,7 @@
 
     <?php if( have_rows('educations_links') ): ?>
       <?php while( have_rows('educations_links') ): the_row();   ?>
-        <div class="col-md-6">
+        <div class="col-md-6 links">
         <!-- Outputs the startpage image -->
         <img class="education-img" src="<?= get_sub_field('image') ?>" alt="">
         </div>

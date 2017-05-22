@@ -30,7 +30,7 @@ $educations = get_posts( array (
               <li class="category"><?php echo $category->name ?></li>
 
           <?php endforeach; ?>
-          
+
         </ul>
 
       </div>
