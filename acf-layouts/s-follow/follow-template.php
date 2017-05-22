@@ -3,7 +3,7 @@
 
 <div class="container-fluid">
 
-  <div class="row">
+  <div class="row marginTop">
 
     <div class="s-follow-background col-md-12" style="background-image:url(<?= $this->getBackgroundImg() ?>);">
       <div class="container s-follow">
