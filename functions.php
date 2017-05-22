@@ -44,7 +44,7 @@ function register_my_menus() {
   register_nav_menus(
     array(
       'yrgo' => __( 'yrgo' ),
-      'studentWeb' => __( 'studentWebben' )
+      'studentWebben' => __( 'studentWebben' )
     )
   );
 }
@@ -62,3 +62,17 @@ function add_my_cpt( $pages )
      }
      return $pages;
 }
+
+ // removes classes from li in wp_nav_menu
+add_filter( 'nav_menu_css_class', 'menu_item_classes', 10, 4 );
+function menu_item_classes( $classes, $item, $args, $depth ) {
+    unset($classes);
+    $classes[] = 'nav-item';
+    return $classes;
+}
+
+// adds class to a tag in wp_nav_menu
+add_filter( 'nav_menu_link_attributes', function($atts) {
+        $atts['class'] = "nav-link";
+        return $atts;
+}, 100, 1 );

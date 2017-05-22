@@ -18,8 +18,8 @@
     </head>
     <body>
 
-<?php wp_nav_menu( array( 'theme_location' => 'studentWeb' ) ); ?>
-
+<!-- chose meny based on page -->
+<?php ($wp_query->post->post_type == 'studentwebben')? $page = 'studentWeb' : $page = $wp_query->post->post_type;?>
 
 <nav class="navbar navbar-toggleable-md navbar-light bg-faded">
 
@@ -35,18 +35,17 @@
       <img class="logotype-image" src="<?php echo get_template_directory_uri() ?>/assets/img/yrgo-nav.png"/>
     </a>
 
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav mr-auto">
+      <?php
+        // loops all menu titles
+         wp_nav_menu( array(
+           'theme_location' => $page,
+           'menu_class' => 'navbar-nav mr-auto', // add classes to ui
+           'container_class' => 'collapse navbar-collapse', //add class to div
+           'container_id' => 'navbarSupportedContent', //add id to div
+           'echo'=> true,
+          ) );
+      ?>
 
-        <!-- Get all pages -->
-        <?php foreach (get_pages($pages) as $page): ?>
-          <li class="nav-item <?php if (is_page($page)) { echo 'active'; } ?>">
-            <a class="nav-link" href="<?php echo get_permalink($page); ?>">
-              <?php echo $page->post_title; ?>
-            </a><!-- /nav-link -->
-          </li><!-- /nav-item -->
-        <?php endforeach; ?>
-    </div>
 
     <!-- <form class="form-inline my-2 my-lg-0">
       <input class="form-control mr-sm-2" type="text" placeholder="Search">
