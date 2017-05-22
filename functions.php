@@ -43,8 +43,8 @@ add_action( 'admin_menu', 'remove_menus' );
 function register_my_menus() {
   register_nav_menus(
     array(
-      'header-menu' => __( 'yrgo' ),
-      'extra-menu' => __( 'studentweb' )
+      'yrgo' => __( 'yrgo' ),
+      'studentWeb' => __( 'studentWebben' )
     )
   );
 }
