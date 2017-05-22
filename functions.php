@@ -51,7 +51,7 @@ function register_my_menus() {
 }
 add_action( 'init', 'register_my_menus' );
 
-// Get to add static page to a post type 
+// Get to add static page to post type 
 add_filter( 'get_pages',  'add_my_cpt' );
 function add_my_cpt( $pages )
 {

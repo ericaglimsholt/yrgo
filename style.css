@@ -1,3 +1,37 @@
+@font-face{
+  font-family: 'Gravur';
+  src: url('./assets/fonts/GravurCondensed-Regular.otf') format('opentype');
+}
+
 .logotype-image {
   max-width: 30px;
+  margin-right: 20px;
+}
+
+.search-image {
+  max-width: 20px;
+  max-height: 20px;
+  margin-right: 20px;
+  margin-left: 0;
+}
+
+.bg-faded {
+  background-color: white !important;
+}
+
+#menu_id, .nav-item {
+  font-family: 'Gravur', sans-serif;
+  font-size: 15px;
+}
+
+#menu_id li, .nav-item {
+  margin-right: 30px;
+}
+
+#menu_id a, .nav-item a, .nav-item a:hover {
+  color: black;
+}
+
+a.not-active {
+  color: grey;
 }
