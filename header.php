@@ -15,6 +15,7 @@
 
     </head>
     <body>
+<?php wp_nav_menu( array( 'theme_location' => 'extra-menu' ) ); ?>
 
 <!-- Start of container div, ends in footer.php -->
 <div class="container">

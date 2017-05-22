@@ -38,3 +38,14 @@ function remove_menus(){
 	remove_menu_page( 'edit-comments.php' );          //Comments
 }
 add_action( 'admin_menu', 'remove_menus' );
+
+// add meny in apperance
+function register_my_menus() {
+  register_nav_menus(
+    array(
+      'header-menu' => __( 'yrgo' ),
+      'extra-menu' => __( 'studentweb' )
+    )
+  );
+}
+add_action( 'init', 'register_my_menus' );
