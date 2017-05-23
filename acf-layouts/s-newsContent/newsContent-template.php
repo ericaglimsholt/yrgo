@@ -10,6 +10,9 @@
 <?php $id = esc_html( $_REQUEST['ID'] ) ?>
 
   <?php foreach ($educations as $education): ?>
+
+    <?php empty($id)? $id = $educations[0]->ID: $id=$id?>
+
     <?php if ($education->ID == $id && have_rows('n-news', $id)): ?>
       <?php while (have_rows('n-news', $id)): ?>
         <?php the_row(); ?>

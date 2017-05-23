@@ -23,8 +23,7 @@
               <p>-</p>
 
               <!-- Send url and id to newsContent -->
-              <!-- FIX URL UNDER THIS TEXT!!! -->
-              <a href="<?php echo add_query_arg( 'ID', $activitie->ID, 'http://localhost:3000/?studentwebben=aktiviteter' ); ?>"><p>Läs mer</p></a>
+              <a href="<?php echo add_query_arg( 'ID', $activitie->ID, get_permalink() ); ?>"><p>Läs mer</p></a>
 
             </div>
 
