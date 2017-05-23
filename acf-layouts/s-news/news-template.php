@@ -22,9 +22,8 @@
 
             <div class="s-news-list">
 
-              <!-- FIX URL UNDER THIS TEXT!!! -->
               <!-- Send url and id to newsContent -->
-              <a href="<?php echo add_query_arg( 'ID', $education->ID, 'http://localhost:3000/?studentwebben=nyhet' ); ?>">
+              <a href="<?php echo add_query_arg( 'ID', $education->ID, get_permalink() ); ?>">
                 <p class="s-news-list-header"><?php echo $education->post_title ?></p>
               </a>
               <hr align="left" style="height:7px;" />
