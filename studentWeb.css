@@ -38,11 +38,22 @@
   justify-content: center;
   align-items: center;
   height: 526px;
+  transition: 0.5s ease-in-out;
+
 }
+
+.s-links-CenterContent:Hover {
+  opacity: 0.9;
+}
+
 
 .s-links-CenterContent h2 {
   font-family: Gravur;
   color: #FFFFFF;
+}
+
+.s-links-CenterContent a:Hover {
+  text-decoration: none;
 }
 
 
