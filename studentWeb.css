@@ -62,16 +62,11 @@
   margin: 0px;
 }
 
-.s-news-list {
-  margin-bottom: 40px;
-}
-
-
 .s-news-list-header {
   font-size: 47px;
 }
 .s-news-list {
-  margin-bottom: 50px;
+  margin-bottom: 10px;
 }
 
 .s-news-list a{
@@ -148,6 +143,14 @@
 
 .marginTop {
   margin-top: 40px;
+}
+
+hr {
+  background-color: #FFFFFF;
+  color: #FFFFFF;
+  width: 31px;
+  border: 1px solid black;
+  border-radius: 7px 7px 7px 7px;
 }
 
 
