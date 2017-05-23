@@ -194,3 +194,25 @@ $yrgo-red: #FD2A3A;
     }
   }
 }
+
+.management {
+  margin-top: 50px;
+
+  h3 {
+    font-family: 'Gravur', sans-serif;
+    font-size: 25px;
+
+    margin-bottom: 20px;
+
+    &::before {
+      content: "I";
+      font-size: 24px;
+      color: black;
+      padding-right: 5px;
+    }
+  }
+}
+
+img.management-logotype {
+  width: 100%;
+}

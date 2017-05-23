@@ -75,8 +75,29 @@ Template Post Type: Education
           <p>Anmälningskod: <?php the_field('application_code_education'); ?></p>
         </div>
       </div>
-
+    </div>
   </div>
+  <div class="container">
+      <div class="row management">
+        <div class="col-md-6">
+          <h3>LEDNINGSGRUPP</h3>
+          <div class="row ">
+
+            <?php if( have_rows('management_education') ): ?>
+              <?php while ( have_rows('management_education') ) : the_row(); ?>
+                <div class="col-md-3">
+                  <img class="management-logotype" src="<?php the_sub_field('management_logotype'); ?>" alt="">
+                </div>
+              <?php endwhile; ?>
+            <?php endif; ?>
+          </div>
+
+        </div>
+        <div class="col-md-6">
+
+        </div>
+      </div>
+
 
 
 
