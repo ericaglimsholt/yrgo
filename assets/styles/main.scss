@@ -87,6 +87,15 @@
     }
 }
 
-.education-img {
-  width: 100%;
+.links-nav {
+  margin-top: 20px;
+
+  div.links {
+    padding-left: 0;
+    padding-right: 0;
+
+    .education-img {
+      width: 100%;
+    }
+  }
 }
