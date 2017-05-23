@@ -61,7 +61,7 @@ $yrgo = array(
 
 
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <?php wp_nav_menu($yrgo);?>
+      <!-- <?php // wp_nav_menu($yrgo);?> -->
     </div>
 
 

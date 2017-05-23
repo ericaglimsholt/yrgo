@@ -51,7 +51,7 @@ function register_my_menus() {
 }
 add_action( 'init', 'register_my_menus' );
 
-// Get to add static page to post type 
+// Get to add static page to post type
 add_filter( 'get_pages',  'add_my_cpt' );
 function add_my_cpt( $pages )
 {
@@ -73,6 +73,6 @@ function menu_item_classes( $classes, $item, $args, $depth ) {
 
 // adds class to a tag in wp_nav_menu
 add_filter( 'nav_menu_link_attributes', function($atts) {
-        $atts['class'] = "nav-link";
+        $atts['class'] = "nav-item";
         return $atts;
 }, 100, 1 );
