@@ -8,7 +8,7 @@
 
 <!-- Get and escape id from url -->
 <?php $id = esc_html( $_REQUEST['ID'] );?>
-
+<?php// PRINT_R($activities) ?>
   <?php foreach ($activities as $activitie): ?>
 
     <?php empty($id)? $id = $activities[0]->ID: $id=$id?>
@@ -28,9 +28,37 @@
                     <p><?php print get_sub_field('content')?></p>
                   </div>
 
-                  <div class="col-6">
-                    <p><?php print get_sub_field('content')?></p>
-                  </div>
+                    <div class="col-4">
+                      <div class="reserve-calender col-9">
+
+                        <div class="row">
+                          <p class="s-newsContentTitleMore">Mer Aktiviteter</p>
+                          <div class="reserve-date">
+                            <?php for ($i=1; $i < 31; $i++) { ?>
+                              <div class="reserve-circle"><?= $i ?></div>
+                              <?php } ?>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                          <div class="col-2 reserve-arrows split">
+                            <p><</p>
+                            <p>Juni</p>
+                            <p>></p>
+                          </div>
+
+                        </div>
+                      </div>
+
+                      <div class="row s-newsContentList">
+                        <?php for ($y=0; $y < 4; $y++) { ?>
+                          <a href="<?=$activities[$y]->guid?>"><p><?=$activities[$y]->post_title?></p></a>
+                        <?php } ?>
+                      </div>
+
+
+                    </div>
+
 
                 </div>
               </div>
