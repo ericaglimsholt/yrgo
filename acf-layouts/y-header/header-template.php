@@ -47,6 +47,9 @@ $educations = get_posts( array (
   </div>
 </div>
 
+<div class="container">
+  
+
 <script>
   document.querySelector('.category').addEventListener("click", function(event){
   document.querySelector('.education').style.display='block';

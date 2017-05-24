@@ -6,6 +6,11 @@ $yrgo-red: #FD2A3A;
 }
 
 @font-face{
+  font-family: 'Gravur-Bold';
+  src: url('./assets/fonts/GravurCondensed-Bold.otf') format('opentype');
+}
+
+@font-face{
   font-family: 'Calibri';
   src: url('./assets/fonts/Calibri.otf') format('opentype');
 }
@@ -221,6 +226,79 @@ $yrgo-red: #FD2A3A;
 img.management-logotype {
   width: 100%;
 }
+
+.textblock {
+  margin-top: 50px;
+  margin-bottom: 50px;
+
+  h1 {
+    font-family: 'Gravur', sans-serif;
+    font-size: 60px;
+    color: $yrgo-red
+  }
+
+  .preamble-textblock {
+    font-family: 'Gravur-Bold', sans-serif;
+    font-size: 44px;
+    line-height: 48px;
+  }
+}
+
+.news-startpage {
+  margin-bottom: 50px;
+
+  h3 {
+    width: 55%;
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    position: absolute;
+
+    font-family: 'Gravur', sans-serif;
+    font-size: 25px;
+
+    &::before {
+      content: "I";
+      font-size: 28px;
+      padding-right: 5px;
+    }
+  }
+}
+
+.active {
+  background-color: $yrgo-red;
+  color: white;
+  height: 500px;
+
+  .center-news {
+    height: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    h2 {
+      font-family: 'Gravur', sans-serif;
+      font-size: 60px;
+      max-width: 500px;
+    }
+  }
+}
+
+.center-news {
+  height: 500px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  h2 {
+    font-family: 'Gravur', sans-serif;
+    font-size: 60px;
+    max-width: 500px;
+  }
+}
+
+
+
 
 
 
