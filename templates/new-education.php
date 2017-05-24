@@ -13,7 +13,9 @@ Template Post Type: Education
 
 <div class="container">
     <div class="row education">
+
       <div class="col-md-12">
+        <img class="application-image" src="<?php echo get_template_directory_uri() ?>/assets/img/application.svg"/>
         <h1><?php the_field('education_name'); ?></h1>
         <a href="<?php the_field('link_application'); ?>">
 
@@ -72,6 +74,9 @@ Template Post Type: Education
           <p>Start: <?php the_field('start_education'); ?></p>
           <p>Antal platser: <?php the_field('places_education'); ?></p>
           <p>Senaste ansökan: <?php the_field('last_application_education'); ?></p>
+          <?php if( get_field('csn_education') ): ?>
+          	<p>Utbildningen är statligt finansierad och berättigar till studiestöd</p>
+          <?php endif; ?>
           <p>Anmälningskod: <?php the_field('application_code_education'); ?></p>
         </div>
       </div>
