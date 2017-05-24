@@ -123,6 +123,11 @@ $yrgo-red: #FD2A3A;
 .education {
   margin-top: 30px;
 
+  .application-image {
+    width: 70px;
+    float: right;
+  }
+
   h1 {
     font-family: 'Gravur', sans-serif;
     font-size: 60px;
@@ -215,4 +220,40 @@ $yrgo-red: #FD2A3A;
 
 img.management-logotype {
   width: 100%;
+}
+
+
+
+
+
+.footer {
+  width: 100%;
+  position: relative;
+  margin-top: 50px;
+  color: white;
+  max-height: 400px;
+  min-height: 400px;
+  overflow: hidden;
+
+  .footer-image {
+    width: 100%;
+    height: auto;
+    position: absolute;
+  }
+
+  .footer-left {
+    float: left;
+    height: 400px;
+
+    display: flex;
+    align-items: flex-end;
+  }
+
+  .footer-right {
+    float: right;
+    height: 400px;
+
+    display: flex;
+    align-items: flex-end;
+  }
 }

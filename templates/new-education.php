@@ -13,7 +13,9 @@ Template Post Type: Education
 
 <div class="container">
     <div class="row education">
+
       <div class="col-md-12">
+        <img class="application-image" src="<?php echo get_template_directory_uri() ?>/assets/img/application.svg"/>
         <h1><?php the_field('education_name'); ?></h1>
         <a href="<?php the_field('link_application'); ?>">
 
@@ -72,6 +74,9 @@ Template Post Type: Education
           <p>Start: <?php the_field('start_education'); ?></p>
           <p>Antal platser: <?php the_field('places_education'); ?></p>
           <p>Senaste ansökan: <?php the_field('last_application_education'); ?></p>
+          <?php if( get_field('csn_education') ): ?>
+          	<p>Utbildningen är statligt finansierad och berättigar till studiestöd</p>
+          <?php endif; ?>
           <p>Anmälningskod: <?php the_field('application_code_education'); ?></p>
         </div>
       </div>
@@ -94,7 +99,25 @@ Template Post Type: Education
 
         </div>
         <div class="col-md-6">
+          <h3>ANSVARIGA UTBILDARE</h3>
+          <?php if( have_rows('responsible_teachers', $post->ID) ): ?>
+            <?php while( have_rows('responsible_teachers', $post->ID) ): the_row(); ?>
+              <?php echo $sub = the_sub_field('name_employee'); ?>
+              <h3><?php var_dump($sub); ?></h3>
+              <?php wp_reset_postdata(); // IMPORTANT - reset the $post object so the rest of the page works correctly ?>
+            <?php endwhile; ?>
+          <?php endif; ?>
 
+          <?php
+
+          $post_object = get_field('project_name');
+          if( $post_object ): ?>
+            <div>
+    	         <h4><?php echo get_the_title($post_object->ID); ?></h4>
+               <span>Post Object Custom Field: <?php the_field('project_description', $post_object->ID); ?></span>
+             </div>
+             <?php wp_reset_postdata(); // IMPORTANT - reset the $post object so the rest of the page works correctly ?>
+          <?php endif; ?>
         </div>
       </div>
 
