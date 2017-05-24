@@ -15,6 +15,9 @@ require get_template_directory().'/post-types/news.php';
 // Register Activities custom post type.
 require get_template_directory().'/post-types/activities.php';
 
+// Register Employee custom post type.
+require get_template_directory().'/post-types/employee.php';
+
 
 require_once('inc/acf/setup.php');
 
