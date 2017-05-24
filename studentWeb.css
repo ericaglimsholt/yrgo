@@ -224,6 +224,91 @@
 
 }
 
+.reserve-calender {
+  /*border: 1px solid red;*/
+}
+
+.reserve-circle {
+  margin: 2px;
+  float: left;
+  font-size: 15px;
+  color: #F52A3B;
+  text-align: center;
+  border: 2px solid #F52A3B;
+	border-radius: 50%;
+	width: 28px;
+	height: 28px;
+}
+
+.reserve-arrows{
+  margin-left: 15px;
+}
+
+.reserve-arrows p{
+  color: #F52A3B;
+  font-size: 25px;
+  margin: 15px;
+  float: left;
+}
+
+.reserve-date p{
+  margin-top: 10px;
+  color: #F52A3B;
+
+}
+
+.reserve-arrows p:Hover{
+  opacity: 0.7;
+  cursor: pointer;
+}
+
+.reserve-circle:Hover {
+  opacity: 0.8;
+  background: #F52A3B;
+  color: #FFFFFF;
+  cursor: pointer;
+}
+
+.reserve-input div {
+  margin-right: 5px;
+  margin-left: 5px;
+}
+.reserve-box  {
+  background: #F3F1EE;
+  border-radius: 10px;
+  height: 30px;
+}
+
+.reserve-box:Hover  {
+  opacity: 0.3;
+  background: grey;
+  cursor: pointer;
+ }
+
+.reserve-button  {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 40px;
+  background: #F52A3B;
+  border-radius: 10px;
+  height: 77px;
+  width: 77px;
+  border-radius: 50%;
+  font-size: 15px;
+	border-radius: 50%;
+}
+
+.reserve-button p {
+  color: #FFFFFF;
+  max-width: 50%;
+}
+
+.reserve-button:Hover {
+  opacity: 0.8;
+  cursor: pointer;
+}
+
 
 .split {
   display: flex;
