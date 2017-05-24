@@ -6,8 +6,18 @@ $yrgo-red: #FD2A3A;
 }
 
 @font-face{
+  font-family: 'Gravur-Bold';
+  src: url('./assets/fonts/GravurCondensed-Bold.otf') format('opentype');
+}
+
+@font-face{
   font-family: 'Calibri';
   src: url('./assets/fonts/Calibri.otf') format('opentype');
+}
+
+* {
+  font-family: 'Calibri', sans-serif;
+  font-size: 18px;
 }
 
 .row-header {
@@ -220,6 +230,25 @@ $yrgo-red: #FD2A3A;
 
 img.management-logotype {
   width: 100%;
+}
+
+.textblock {
+  margin-top: 50px;
+  margin-bottom: 50px;
+
+  h1 {
+    font-family: 'Gravur', sans-serif;
+    font-size: 60px;
+    color: $yrgo-red;
+  }
+}
+
+
+
+.preamble-textblock {
+  font-family: 'Gravur-Bold', sans-serif;
+  font-size: 44px;
+  line-height: 48px;
 }
 
 
