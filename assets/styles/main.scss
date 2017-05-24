@@ -15,11 +15,6 @@ $yrgo-red: #FD2A3A;
   src: url('./assets/fonts/Calibri.otf') format('opentype');
 }
 
-* {
-  font-family: 'Calibri', sans-serif;
-  font-size: 18px;
-}
-
 .row-header {
   width: 100%;
   max-height: 526px;
@@ -233,23 +228,19 @@ img.management-logotype {
 }
 
 .textblock {
-  margin-top: 50px;
-  margin-bottom: 50px;
-
   h1 {
     font-family: 'Gravur', sans-serif;
     font-size: 60px;
-    color: $yrgo-red;
+    color: $yrgo-red
+  }
+
+  .preamble-textblock {
+    font-family: 'Gravur-Bold', sans-serif;
+    font-size: 44px;
+    line-height: 48px;
   }
 }
 
-
-
-.preamble-textblock {
-  font-family: 'Gravur-Bold', sans-serif;
-  font-size: 44px;
-  line-height: 48px;
-}
 
 
 
