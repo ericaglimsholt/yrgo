@@ -28,12 +28,4 @@ class Header extends ACFModule {
     return $this->backgroundImg;
   }
 
-
-  public function setOpacityColor($opacityColor) {
-    $this->opacityColor = $opacityColor;
-  }
-
-  public function getOpacityColor(){
-    return $this->opacityColor;
-  }
 }

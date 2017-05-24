@@ -166,6 +166,33 @@
   margin-right: 80px;
 }
 
+.s-category {
+  font-family: Gravur;
+  color: #F52A3B;
+}
+
+.s-category p  {
+  margin: 3px;
+  font-size: 25px;
+}
+
+.s-category .bold  {
+  font-weight: bold;
+}
+
+.s-category h2{
+  font-size: 47px;
+  margin-top: 20px;
+  margin-bottom: 30px;
+}
+
+.s-category-show:Hover {
+  opacity: 0.8;
+  cursor: pointer;
+ }
+
+
+
 
 .split {
   display: flex;
