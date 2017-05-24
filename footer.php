@@ -1,6 +1,7 @@
 <!-- End of container div, starts in header.php -->
 </div>
 
+
 <script>
   let onlyText = document.querySelector('.onlyText');
   let allImg = document.querySelectorAll('.removeImg');
@@ -65,6 +66,23 @@
   //     });
 
 </script>
+
+<div class="footer">
+  <img class="footer-image" src="<?php echo get_template_directory_uri() ?>/assets/img/footer.png"/>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="footer-left">
+          <p>© 2017 Yrgo</p>
+        </div>
+
+        <div class="footer-right">
+          <p>Kontakt</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
 
 
 <!-- jQuery first, then Tether, then Bootstrap JS. -->

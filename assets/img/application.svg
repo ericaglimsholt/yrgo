@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 21.0.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Lager_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 74 73" style="enable-background:new 0 0 74 73;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:#E73641;}
+	.st1{clip-path:url(#SVGID_2_);}
+	.st2{clip-path:url(#SVGID_4_);fill:#E73641;}
+	.st3{fill:#FFFFFF;}
+	.st4{font-family:'GravurCondensed-Regular';}
+	.st5{font-size:12px;}
+</style>
+<circle class="st0" cx="37" cy="36.4" r="33.5"/>
+<g>
+	<defs>
+		<circle id="SVGID_1_" cx="573.5" cy="-978.5" r="33.5"/>
+	</defs>
+	<clipPath id="SVGID_2_">
+		<use xlink:href="#SVGID_1_"  style="overflow:visible;"/>
+	</clipPath>
+	<g class="st1">
+		<defs>
+			<rect id="SVGID_3_" x="-683" y="-1679" width="1440" height="3434"/>
+		</defs>
+		<clipPath id="SVGID_4_">
+			<use xlink:href="#SVGID_3_"  style="overflow:visible;"/>
+		</clipPath>
+		<rect x="535" y="-1017" class="st2" width="77" height="77"/>
+	</g>
+</g>
+<text transform="matrix(1 0 0 1 19.8183 38.894)" class="st3 st4 st5">ANSÖK</text>
+</svg>
