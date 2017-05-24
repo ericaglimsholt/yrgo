@@ -191,7 +191,38 @@
   cursor: pointer;
  }
 
+.s-exams h2 {
+  font-family: Gravur;
+  font-size: 47px;
+  color: #F52A3B;
+}
 
+.s-exams-content {
+  font-family: Calibri;
+  font-size: 18px;
+}
+
+.s-exams ul {
+  float: right;
+}
+
+.s-exams li {
+  margin-top: 10px;
+  list-style-type: none;
+}
+
+.s-exams a {
+  font-family: Gravur;
+  color: #F52A3B;
+}
+
+.s-exams a:Hover {
+  opacity: 0.8;
+  cursor: pointer;
+  color: #F52A3B;
+  text-decoration: none;
+
+}
 
 
 .split {
