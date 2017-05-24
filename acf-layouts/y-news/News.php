@@ -19,4 +19,20 @@ class News extends ACFModule {
   public function getTitle(){
     return $this->title;
   }
+
+  public function setDateFocus($date_Focus) {
+    $this->date_focus = $date_Focus ;
+  }
+
+  public function getDateFocus(){
+    return $this->date_focus;
+  }
+
+  public function setDate($date) {
+    $this->date = $date ;
+  }
+
+  public function getDate(){
+    return $this->date;
+  }
 }

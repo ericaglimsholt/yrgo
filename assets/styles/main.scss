@@ -228,6 +228,9 @@ img.management-logotype {
 }
 
 .textblock {
+  margin-top: 50px;
+  margin-bottom: 50px;
+
   h1 {
     font-family: 'Gravur', sans-serif;
     font-size: 60px;
@@ -240,6 +243,61 @@ img.management-logotype {
     line-height: 48px;
   }
 }
+
+.news-startpage {
+  margin-bottom: 50px;
+
+  h3 {
+    width: 55%;
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    position: absolute;
+
+    font-family: 'Gravur', sans-serif;
+    font-size: 25px;
+
+    &::before {
+      content: "I";
+      font-size: 28px;
+      padding-right: 5px;
+    }
+  }
+}
+
+.active {
+  background-color: $yrgo-red;
+  color: white;
+  height: 500px;
+
+  .center-news {
+    height: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    h2 {
+      font-family: 'Gravur', sans-serif;
+      font-size: 60px;
+      max-width: 500px;
+    }
+  }
+}
+
+.center-news {
+  height: 500px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  h2 {
+    font-family: 'Gravur', sans-serif;
+    font-size: 60px;
+    max-width: 500px;
+  }
+}
+
+
 
 
 
