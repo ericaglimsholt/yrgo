@@ -25,7 +25,7 @@
 
   <div class="row marginTop">
 
-    <div class="s-follow-background col-md-12" style="background-image:url(<?= $this->getBackgroundImg() ?>);">
+    <div class="s-follow-background col-md-12 removeImg" style="background-image:url(<?= $this->getBackgroundImg() ?>);">
       <div class="container s-follow">
         <p>Följ oss</p>
 
@@ -81,8 +81,8 @@ if (startNumber < 3) {
   startNumber = 0;
 }
 
-console.log(educations);
-console.log(startNumber);
+// console.log(educations);
+// console.log(startNumber);
 
 
 

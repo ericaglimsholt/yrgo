@@ -75,7 +75,7 @@ $yrgo = array(
           <a href="#">Studentwebb</a>
         </li>
         <li class="nav-item">
-          <a href="#">Bara text</a>
+          <a class="onlyText" data-check="true" href="#">Bara text</a>
         </li>
         <li class="nav-item ">
           <a href="#">SVE</a>

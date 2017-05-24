@@ -23,7 +23,7 @@ $categorys = get_posts([
 
   <div class="row">
 
-    <div class="s-header-background col-md-12" style="background-image:url(<?= $this->getBackgroundImg() ?>);">
+    <div class="s-header-background col-md-12 removeImg" style="background-image:url(<?= $this->getBackgroundImg() ?>);">
 
       <div class="container s-news">
         <p class="s-news-header" style="color:<?=$this->getColorTitle()?>":><?=$this->getTitleField()?></p>
