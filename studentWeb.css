@@ -172,6 +172,11 @@
   margin-right: 80px;
 }
 
+.s-newsContentContent {
+  margin-top: 20px;
+  column-count: 2;
+}
+
 .s-newsContentList a{
   color: #F52A3B;
   text-decoration: none;
@@ -380,7 +385,6 @@ hr {
   border: 1px solid black;
   border-radius: 7px 7px 7px 7px;
 }
-
 
 .red {
   height: 200px;
