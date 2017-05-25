@@ -67,6 +67,64 @@
 
 </script>
 
+<?php if ($wp_query->post->post_type == 'studentwebben'): ?>
+
+
+<div class="footer-studentweb">
+  <div class="col-12 line"></div>
+
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="row footer-studentweb-content">
+          <div class="col-3">
+            <p><b>Kontakta oss</b></p>
+            <p>Telefon: 031 - 367 31 00</p>
+            <p>Fullständiga kontaktuppgifter</p>
+          </div>
+          <div class="col-3">
+            <p><b>Besöksadress</b></p>
+            <p>Högskoleområdet</p>
+            <p>Lärdomsgatan 3, Göteborg</p>
+            <a href="https://kartor.eniro.se/?c=57.706022,11.936272&z=14&l=aerial&q=%22L%C3%A4rdomsgatan%203,%20G%C3%B6teborg%22;geo">
+              <p>Hitta hit</p>
+            </a>
+          </div>
+          <div class="col-6">
+            <h3>Snabblänkar</h3>
+            <div class="row">
+              <div class="col-6">
+                <a href="#"><p>Självservice användarkonto</p></a>
+                <a href="#"><p>Registrering och kontoaktivering</p></a>
+                <a href="#"><p>Boka grupprum</p></a>
+                <a href="#"><p>Studera utomlands</p></a>
+                <a href="#"><p>Service Center</p></a>
+              </div>
+              <div class="col-6">
+                <a href="#"><p>Bibloteket</p></a>
+                <a href="#"><p>IT Helpdesk</p></a>
+                <a href="#"><p>Ladoks webbtjänster</p></a>
+                <a href="#"><p>Ping Pong</p></a>
+                <a href="#"><p>Schema</p></a>
+                <a href="#"><p>Office365</p></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-12 studentwebb-footer-logo">
+        <img class="Y-logo" src="<?php echo get_template_directory_uri() ?>/assets/img/yrgo-nav.png"/>
+        <p>© 2017 Yrgo</p>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+<?php else: ?>
+
 <div class="footer">
   <img class="footer-image" src="<?php echo get_template_directory_uri() ?>/assets/img/footer.png"/>
   <div class="container">
@@ -84,6 +142,7 @@
   </div>
 </div>
 
+<?php endif; ?>
 
 <!-- jQuery first, then Tether, then Bootstrap JS. -->
 <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
