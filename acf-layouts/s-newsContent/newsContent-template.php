@@ -19,18 +19,16 @@
 
             <div class="container">
               <div class="row s-newsContent">
-
                 <div class="col-12">
                   <p class="headline"><?php print get_sub_field('headline')?></p>
                 </div>
 
-                <div class="col-6">
-                  <p><?php print get_sub_field('content')?></p>
+                <div class="row">
+                  <div class="col-12 s-newsContentContent">
+                    <?= get_sub_field('content')?>
+                  </div>
                 </div>
 
-                <div class="col-6">
-                  <p><?php print get_sub_field('content')?></p>
-                </div>
 
               </div>
             </div>
