@@ -3,13 +3,6 @@ $categories = get_categories( array(
     'orderby' => 'name',
     'order'   => 'ASC'
 ));
-
-$educations = get_posts( array (
-  'post_type' => 'education',
-  'order' => 'ASC',
-  'orderby' => 'name',
-  'posts_per_page' => -1,
-));
 ?>
 
 
@@ -26,20 +19,10 @@ $educations = get_posts( array (
         <h2 class="start"><?= $this->getStartTitle() ?></h2>
 
         <ul>
-          <?php foreach ($categories as $category): ?>
+          <?php foreach ($categories as $category): ?> 
               <li class="category"><?php echo $category->name ?></li>
-
           <?php endforeach; ?>
 
-        </ul>
-
-      </div>
-      <div class="col-md-6 show-educations">
-        <ul>
-          <?php foreach ($educations as $education): ?>
-              <li class="education"><?php echo $education->post_title ?></li>
-
-          <?php endforeach; ?>
         </ul>
 
       </div>
@@ -48,11 +31,3 @@ $educations = get_posts( array (
 </div>
 
 <div class="container">
-  
-
-<script>
-  document.querySelector('.category').addEventListener("click", function(event){
-  document.querySelector('.education').style.display='block';
-  event.preventDefault();
-  });
-</script>

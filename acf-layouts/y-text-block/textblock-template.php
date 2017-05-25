@@ -5,8 +5,11 @@
       <?= $this->getPreamble() ?>
     </p>
 
+
+    <div class="two-columns">
+      <?= $this->getDescription() ?>
+    </div>
   </div>
-  <div class="col-md-6">
-    <?= $this->getDescription() ?>
-  </div>
+
+
 </div>
