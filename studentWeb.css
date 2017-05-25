@@ -329,6 +329,40 @@
   cursor: pointer;
 }
 
+.footer-studentweb-content {
+  font-family: Gravur;
+  margin-top: 40px;
+  color: black;
+}
+
+.footer-studentweb-content a{
+  color: black;
+}
+
+.footer-studentweb-content a:Hover{
+  color: #F52A3B;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.studentwebb-footer-logo {
+  font-family: Gravur;
+  display: flex;
+  flex-direction:row;
+}
+.studentwebb-footer-logo p {
+  margin-left: 20px;
+}
+
+
+.line {
+  height: 5px;
+  background: #F52A3B;
+}
+.Y-logo {
+  height: 20px;
+  width: 20px;
+}
 
 .split {
   display: flex;
