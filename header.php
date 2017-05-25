@@ -43,7 +43,7 @@ $yrgo = array(
   <div class="container">
 
     <!-- Logotype for home navigation -->
-    <a class="navbar-brand" href="<?php echo site_url(); ?>">
+    <a class="navbar-brand" href='<?php echo site_url() . "/?" . $wp_query->post->post_type ."=startsida"; ?>'>
       <img class="logotype-image" src="<?php echo get_template_directory_uri() ?>/assets/img/yrgo-nav.png"/>
     </a>
 
@@ -72,7 +72,13 @@ $yrgo = array(
 
 
         <li class="nav-item">
-          <a href="#">Studentwebb</a>
+          <?php if ($wp_query->post->post_type == 'studentwebben'): ?>
+            <a href="<?=get_home_url()?>/?yrgo=startsida">Yrgo</a>
+            <?php else: ?>
+            <a href="<?=get_home_url()?>/?studentwebben=startsida">Studentwebb</a>
+          <?php endif; ?>
+
+
         </li>
         <li class="nav-item">
           <a class="onlyText" data-check="true" href="#">Bara text</a>
