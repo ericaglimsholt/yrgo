@@ -19,12 +19,12 @@
           <?php foreach ($activities as $activitie): ?>
             <?php if ($this->getActivitiesHeadlinesField()): ?>
             <div class="s-news-list">
-              <p class="s-news-list-header"><?php echo $activitie->post_title ?></p>
-              <p>-</p>
 
               <!-- Send url and id to newsContent -->
-              <a href="<?php echo add_query_arg( 'ID', $activitie->ID, get_permalink() ); ?>"><p>Läs mer</p></a>
-
+              <a href="<?php echo add_query_arg( 'ID', $activitie->ID, get_permalink() ); ?>">
+                <p class="s-news-list-header"><?php echo $activitie->post_title ?></p>
+              </a>
+              <hr align="left" style="height:7px;" />
             </div>
 
 

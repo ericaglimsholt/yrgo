@@ -7,7 +7,6 @@
   'posts_per_page' => $this->getNewsHeadlinesField(),
   'orderby' => 'name'
 ]); ?>
-
 <div class="container-fluid marginTop">
 
   <div class="row">
@@ -19,17 +18,15 @@
 
           <?php foreach ($educations as $education): ?>
             <?php if ($this->getNewsHeadlinesField()): ?>
-
             <div class="s-news-list">
 
               <!-- Send url and id to newsContent -->
-              <a href="<?php echo add_query_arg( 'ID', $education->ID, get_permalink() ); ?>">
+              <a href="<?php echo add_query_arg( 'ID', $education->ID, get_home_url() . "/?" . get_post_type() . "=nyhet" ); ?>">
                 <p class="s-news-list-header"><?php echo $education->post_title ?></p>
               </a>
               <hr align="left" style="height:7px;" />
 
             </div>
-
 
           <?php endif; endforeach; ?>
 
