@@ -8,7 +8,6 @@
 
 <!-- Get and escape id from url -->
 <?php $id = esc_html( $_REQUEST['ID'] );?>
-<?php// PRINT_R($activities) ?>
   <?php foreach ($activities as $activitie): ?>
 
     <?php empty($id)? $id = $activities[0]->ID: $id=$id?>
@@ -52,7 +51,9 @@
 
                       <div class="row s-newsContentList">
                         <?php for ($y=0; $y < 4; $y++) { ?>
-                          <a href="<?=$activities[$y]->guid?>"><p><?=$activities[$y]->post_title?></p></a>
+                          <a href="<?php echo add_query_arg( 'ID', $activities[$y]->ID, get_permalink() ); ?>">
+                            <p><?=$activities[$y]->post_title?></p>
+                          </a>
                         <?php } ?>
                       </div>
 
