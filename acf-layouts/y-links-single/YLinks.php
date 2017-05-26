@@ -1,7 +1,7 @@
 <?php
 class YLinks extends ACFModule {
   public function template() {
-      return 'links-template.php';
+      return 'linkssingle-template.php';
   }
 
   public function setImage($image) {

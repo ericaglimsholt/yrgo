@@ -13,6 +13,9 @@ $educations = get_posts (array(
     'type' => 'taxonomy_multicheck',
 ));
 
+$obj = get_post_type_object( 'educations' );
+//echo $obj->labels->singular_name;
+
  ?>
 
 <!-- Closes container div -->
@@ -20,23 +23,25 @@ $educations = get_posts (array(
 
 <div class="row links-nav">
 
-    <?php if( have_rows('educations_links') ): ?>
-      <?php while( have_rows('educations_links') ): the_row();   ?>
+    <?php if( have_rows('educations_links_single') ): ?>
+      <?php while( have_rows('educations_links_single') ): the_row();   ?>
 
         <div class="col-md-6 links">
 
 
 
         <!-- Outputs the startpage image -->
-          <a href="<?= get_sub_field('link_education') ?>">
+          <a href="<?= get_sub_field('link_education_single') ?>">
             <div class="container links-container">
-              <?php $term = get_sub_field('choose_education'); ?>
-              <?php foreach ($term as $terma): ?>
-                <h3><?php print $terma->name; ?></h3>
-              <?php endforeach; ?>
+                <h3><?php $obj = get_post_type_object( 'education' );
+                print_r($obj->labels->singular_name)
+                //echo $obj->name;
+                ?>
+
+                </h3>
             </div>
 
-            <img class="education-img" src="<?= get_sub_field('image') ?>" alt="">
+            <img class="education-img" src="<?= get_sub_field('image_single') ?>" alt="">
           </a>
         </div>
 
