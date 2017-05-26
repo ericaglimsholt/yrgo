@@ -20,4 +20,12 @@ class YLinks extends ACFModule {
     return $this->education;
   }
 
+  public function setLink($link) {
+    $this->link = $link ;
+  }
+
+  public function getLink(){
+    return $this->link;
+  }
+
 }
