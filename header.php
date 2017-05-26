@@ -30,7 +30,7 @@ $yrgo = array(
 
 
 <!-- chose meny based on page -->
-<?php ($wp_query->post->post_type == 'studentwebben')? $page = 'studentWeb' : $page = $wp_query->post->post_type;?>
+<?php ($wp_query->post->post_type == 'studentwebben')? $page = 'studentwebben' : $page = $wp_query->post->post_type;?>
 
 
 <nav class="navbar navbar-toggleable-md navbar-light bg-faded">
