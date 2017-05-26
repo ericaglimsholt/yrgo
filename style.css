@@ -1,3 +1,11 @@
+/*!
+  Theme Name: Yrgo
+  Author: Erica Glimsholt & Joakim Remler
+  Description: Utvecklat av Yrgostudenter.
+  Version: 1.0.0
+  GitHub Theme URI: ericaglimsholt/yrgo
+*/
+
 @font-face{
   font-family: 'Gravur';
   src: url('./assets/fonts/GravurCondensed-Regular.otf') format('opentype');
