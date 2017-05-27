@@ -65,9 +65,7 @@
 
 
 
-
 <div class="container">
-
 
   <script>
 
@@ -81,7 +79,7 @@ if (startNumber < 3) {
   startNumber = 0;
 }
 
-// console.log(educations);
+console.log(educations);
 // console.log(startNumber);
 
 
