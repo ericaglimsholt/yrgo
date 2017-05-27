@@ -126,7 +126,7 @@
 <?php else: ?>
 
 <div class="footer">
-  <video class="footer-image" src="<?php echo get_template_directory_uri() ?>/assets/img/Productive-Morning.mp4" autoplay poster="posterimage.jpg">
+  <video class="footer-image" src="<?php echo get_template_directory_uri() ?>/assets/img/footer_yrgo.mp4">
 
   </video>
   <div class="container">
@@ -137,7 +137,13 @@
         </div>
 
         <div class="footer-right">
+          <div class="img-social">
+            <img class"social-media-footer" src="<?php echo get_template_directory_uri() ?>/assets/img/Facebook.png" alt="">
+            <img class"social-media-footer" src="<?php echo get_template_directory_uri() ?>/assets/img/LinkedIn.png" alt="">
+            <img class"social-media-footer" src="<?php echo get_template_directory_uri() ?>/assets/img/Instagram.png" alt="">
+          </div>
           <p>Kontakt</p>
+
         </div>
       </div>
     </div>

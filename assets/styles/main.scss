@@ -342,8 +342,8 @@ img.management-logotype {
   position: relative;
   margin-top: 50px;
   color: white;
-  max-height: 500px;
-  min-height: 500px;
+  max-height: 600px;
+  min-height: 600px;
   overflow: hidden;
   font-family: 'Gravur', sans-serif;
 
@@ -355,7 +355,7 @@ img.management-logotype {
 
   .footer-left {
     float: left;
-    height: 500px;
+    height: 600px;
 
     display: flex;
     align-items: flex-end;
@@ -363,9 +363,21 @@ img.management-logotype {
 
   .footer-right {
     float: right;
-    height: 500px;
+    height: 600px;
 
     display: flex;
     align-items: flex-end;
   }
+
+  .img-social {
+    margin-bottom: 20px;
+    margin-right: 20px;
+
+    img {
+      margin-right: 20px;
+    }
+  }
+
+
+
 }
