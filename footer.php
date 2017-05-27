@@ -126,7 +126,7 @@
 <?php else: ?>
 
 <div class="footer">
-  <video class="footer-image" src="<?php echo get_template_directory_uri() ?>/assets/img/footer_yrgo.mp4">
+  <video class="footer-image" src="<?php echo get_template_directory_uri() ?>/assets/img/footer_yrgo.mp4" autoplay="">
 
   </video>
   <div class="container">
@@ -138,12 +138,13 @@
 
         <div class="footer-right">
           <div class="img-social">
-            <img class"social-media-footer" src="<?php echo get_template_directory_uri() ?>/assets/img/Facebook.png" alt="">
-            <img class"social-media-footer" src="<?php echo get_template_directory_uri() ?>/assets/img/LinkedIn.png" alt="">
-            <img class"social-media-footer" src="<?php echo get_template_directory_uri() ?>/assets/img/Instagram.png" alt="">
+            <img class"social-media-footer" src="<?php echo get_template_directory_uri() ?>/assets/img/Facebook.svg" alt="">
+            <img class"social-media-footer" src="<?php echo get_template_directory_uri() ?>/assets/img/LinkedIn.svg" alt="">
+            <img class"social-media-footer" src="<?php echo get_template_directory_uri() ?>/assets/img/Instagram.svg" alt="">
           </div>
-          <p>Kontakt</p>
-
+          <a href="http://www.clienterica2.nu/yrgo/kontakt/">
+            <p>Kontakt</p>
+          </a>
         </div>
       </div>
     </div>
