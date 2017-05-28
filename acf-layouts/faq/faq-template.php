@@ -1,6 +1,8 @@
 <div class="row faq">
   <div class="col-md-12">
     <h1>Frequently asked questions</h1>
+    <img class="search-image" src="<?php echo get_template_directory_uri() ?>/assets/img/search.svg"/>
+    <input type="text" name="faq" placeholder="Skriv in ett sökord">
   </div>
 
   <?php if( have_rows('faq_repeater') ): ?>

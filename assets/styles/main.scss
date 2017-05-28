@@ -341,6 +341,22 @@ img.management-logotype {
   margin-top: 30px;
   margin-bottom: 30px;
 
+  .col-md-12 {
+    margin-bottom: 50px;
+  }
+
+  input[name=faq] {
+    border-bottom: 1px solid black;
+    border-right: none;
+    border-left: none;
+    border-top: none;
+    width: 300px;
+
+    &:focus {
+      outline: none;
+    }
+  }
+
   h1 {
     font-family: 'Gravur', sans-serif;
     color: $yrgo-red;
@@ -349,6 +365,8 @@ img.management-logotype {
   }
 
   .faq-col {
+    margin-bottom: 10px;
+
     .faq-question {
       h3 {
         font-family: 'Gravur-Bold', sans-serif;
