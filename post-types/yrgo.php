@@ -13,5 +13,6 @@ add_action('init', function () {
         'menu_icon' => 'dashicons-universal-access',
         'menu_position' => 2,
         'public' => true,
+        'taxonomies'  => array( 'category' ),
     ]);
 });

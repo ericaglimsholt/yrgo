@@ -1,7 +1,8 @@
 <?php
 $categories = get_categories( array(
     'orderby' => 'name',
-    'order'   => 'ASC'
+    'order'   => 'ASC',
+    'rewrite' => true,
 ));
 ?>
 
@@ -19,8 +20,13 @@ $categories = get_categories( array(
         <h2 class="start"><?= $this->getStartTitle() ?></h2>
 
         <ul>
-          <?php foreach ($categories as $category): ?> 
-              <li class="category"><?php echo $category->name ?></li>
+          <?php foreach ($categories as $category): ?>
+            <?php
+            // $term_link = get_term_link( $category ); ?>
+             <!-- <a href="<?php echo esc_url( $term_link ) ?>"> -->
+               <li class="category"><?php  echo $category->name ?></li>
+
+              <!-- </a> -->
           <?php endforeach; ?>
 
         </ul>
