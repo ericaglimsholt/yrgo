@@ -32,24 +32,32 @@
 }
 
 /*s-links*/
+
 .s-links-CenterContent {
+  height: 526px;
+  padding: 0 !important;
+}
+
+.s-links-CenterColor{
+  transition: background 1.5s ease-in-out;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 526px;
-  transition: 0.5s ease-in-out;
-
+  height: 100%;
+  width: 100%;
 }
 
-.s-links-CenterContent:Hover {
-  opacity: 0.9;
-}
+/*.s-links-CenterColor:Hover {*/
+  /*background: linear-gradient( to top, rgba(255,255,255,0), red);*/
+  /*opacity: 0.4;*/
+/*}*/
 
 
-.s-links-CenterContent h2 {
+.s-links-CenterColor h2 {
   font-family: Gravur;
   color: #FFFFFF;
+  /*z-index: 10000;*/
 }
 
 .s-links-CenterContent a:Hover {
@@ -115,12 +123,17 @@
 
 .s-follow-educations{
   text-align: center;
-  display: none;
+  /*display: none;*/
 }
 
 .s-follow-educations h3{
   margin-top: 15px;
   color: #FFFFFF;
+}
+
+.s-follow-educations img{
+  height: 200px;
+  width: 200px;
 }
 
 .s-follow-educations a:Hover{
@@ -191,30 +204,49 @@
 
 }
 
+
+
+
+
+
+
+
+
+
 .s-category {
   font-family: Gravur;
   color: #F52A3B;
 }
 
-.s-category p  {
+.s-category div p  {
   margin: 3px;
   font-size: 25px;
 }
 
-.s-category .bold  {
+.s-category-categorys .bold  {
   font-weight: bold;
 }
 
-.s-category h2{
+.s-category-educations {
+  display: none;
+}
+
+.s-category-categorys:Hover {
+  opacity: 0.8;
+  cursor: pointer;
+}
+
+.s-category-title h2{
+  font-family: Gravur;
+  color: #F52A3B;
   font-size: 47px;
   margin-top: 20px;
   margin-bottom: 30px;
 }
 
-.s-category-show:Hover {
-  opacity: 0.8;
-  cursor: pointer;
- }
+.s-category-educations {
+    font-size: 25px;
+}
 
 .s-exams h2 {
   font-family: Gravur;
@@ -394,7 +426,6 @@ hr {
 }
 
 .blue {
-  height: 280px;
   background: blue;
 }
 .green {

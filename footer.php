@@ -11,13 +11,13 @@
 
 
 
-  console.log(allAtags);
+  // console.log(allAtags);
 
   onlyText.addEventListener("click", function (e) {
 
     // display text only
     if (this.dataset.check == "true") {
-      console.log('run');
+      // console.log('run');
       for (i = 0; i < allImg.length; i++) {
         allImg[i].style.backgroundImage = "";
         allImg[i].removeAttribute("class");
