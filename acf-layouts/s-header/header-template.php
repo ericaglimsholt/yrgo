@@ -6,7 +6,7 @@
 
   <div class="row">
 
-    <div class="s-header-background col-md-12 removeImg" style="background-image:url(<?= $this->getBackgroundImg() ?>);">
+    <div class="s-header-background col-12 removeImg" style="background-image:url(<?= $this->getBackgroundImg() ?>);">
 
       <div class="s-header-CenterContent">
         <img class="" src="<?= $this->getLogo() ?>" alt="">

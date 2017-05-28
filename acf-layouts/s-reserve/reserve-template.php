@@ -4,7 +4,7 @@
 <div class="container">
 
   <div class="row marginTop s-exams">
-    <div class="col-6">
+    <div class="col-sm-12 col-md-6">
       <h2><?= get_sub_field('title') ?></h2>
       <p><?= get_sub_field('content')?></p>
     </div>
@@ -12,7 +12,7 @@
 
   <div class="row">
 
-    <div class="col-8 reserve-date">
+    <div class="col-sm-12 col-md-8 reserve-date">
       <p>Datum och tid</p>
       <div class="row reserve-input">
         <div class="col-1 reserve-box"></div>
@@ -21,7 +21,7 @@
       </div>
 
     <div class="row">
-      <div class="col-4">
+      <div class="col-sm-12 col-md-4">
         <div class="reserve-calender">
 
           <div class="row">
@@ -33,7 +33,7 @@
           </div>
 
           <div class="row">
-            <div class="col-2 reserve-arrows split">
+            <div class="col-sm-12 col-md-2 reserve-arrows split">
               <p><</p>
               <p>Juni</p>
               <p>></p>
@@ -46,15 +46,15 @@
     </div>
     </div>
 
-    <div class="col-4 reserve-date">
+    <div class="col-sm-6 col-md-4 reserve-date">
         <p>CAMPUS</p>
         <div class="row">
-          <div class="col-6 reserve-box"></div>
+          <div class="col-sm-12 col-md-6 reserve-box"></div>
         </div>
 
         <p>Rum</p>
         <div class="row">
-          <div class="col-6 reserve-box"></div>
+          <div class="col-sm-12 col-md-6 reserve-box"></div>
         </div>
 
         <div class="reserve-button">
