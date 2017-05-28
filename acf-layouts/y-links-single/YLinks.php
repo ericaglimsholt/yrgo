@@ -4,13 +4,13 @@ class YLinks extends ACFModule {
       return 'linkssingle-template.php';
   }
 
-  public function setImage($image) {
-    $this->image = $image ;
-  }
-
-  public function getImage(){
-    return $this->image;
-  }
+  // public function setImage($image) {
+  //   $this->image = $image ;
+  // }
+  //
+  // public function getImage(){
+  //   return $this->image;
+  // }
 
   public function setEducation($education) {
     $this->education = $education ;
@@ -20,12 +20,12 @@ class YLinks extends ACFModule {
     return $this->education;
   }
 
-  public function setLink($link) {
-    $this->link = $link ;
-  }
-
-  public function getLink(){
-    return $this->link;
-  }
+  // public function setLink($link) {
+  //   $this->link = $link ;
+  // }
+  //
+  // public function getLink(){
+  //   return $this->link;
+  // }
 
 }

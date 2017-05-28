@@ -20,6 +20,8 @@ $educations = get_posts (array(
 
 <div class="row links-nav">
 
+
+
     <?php if( have_rows('educations_links') ): ?>
       <?php while( have_rows('educations_links') ): the_row();   ?>
 
