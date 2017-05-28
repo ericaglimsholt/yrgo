@@ -35,7 +35,7 @@ $yrgo-red: #FD2A3A;
       font-family: 'Gravur', sans-serif;
     }
 
-    .start {
+    .start, .description {
       &::before {
         content: "-";
         color: white;
@@ -43,6 +43,7 @@ $yrgo-red: #FD2A3A;
         border-radius: 20px;
       }
     }
+
 
     ul {
       list-style: none;
@@ -392,6 +393,8 @@ img.management-logotype {
     }
   }
 }
+
+
 
 
 
