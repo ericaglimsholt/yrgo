@@ -16,6 +16,7 @@ ACFListener::fields('yrgo');
 ACFListener::fields('studentweb');
 ACFListener::fields('n-news');
 ACFListener::fields('education');
+ACFListener::fields('faq');
 
 
 

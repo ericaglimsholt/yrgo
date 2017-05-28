@@ -35,7 +35,7 @@ $yrgo-red: #FD2A3A;
       font-family: 'Gravur', sans-serif;
     }
 
-    .start {
+    .start, .description {
       &::before {
         content: "-";
         color: white;
@@ -43,6 +43,7 @@ $yrgo-red: #FD2A3A;
         border-radius: 20px;
       }
     }
+
 
     ul {
       list-style: none;
@@ -336,6 +337,65 @@ img.management-logotype {
     max-width: 500px;
   }
 }
+
+.faq {
+  margin-top: 30px;
+  margin-bottom: 30px;
+
+  .col-md-12 {
+    margin-bottom: 50px;
+  }
+
+  input[name=faq] {
+    border-bottom: 1px solid black;
+    border-right: none;
+    border-left: none;
+    border-top: none;
+    width: 300px;
+
+    &:focus {
+      outline: none;
+    }
+  }
+
+  h1 {
+    font-family: 'Gravur', sans-serif;
+    color: $yrgo-red;
+    font-size: 60px;
+    line-height: 72px;
+  }
+
+  .faq-col {
+    margin-bottom: 10px;
+
+    .faq-question {
+      h3 {
+        font-family: 'Gravur-Bold', sans-serif;
+        font-size: 18px;
+        line-height: 23px;
+
+        &::before {
+          content: "I";
+          font-size: 18px;
+          color: black;
+          padding-right: 5px;
+        }
+      }
+    }
+
+    .faq-answere {
+      display: none;
+
+      p {
+        font-family: 'Calibri', sans-serif;
+        font-size: 16px;
+      }
+    }
+  }
+}
+
+
+
 
 
 

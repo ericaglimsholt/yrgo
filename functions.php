@@ -18,6 +18,8 @@ require get_template_directory().'/post-types/activities.php';
 // Register Employee custom post type.
 require get_template_directory().'/post-types/employee.php';
 
+// Register FAQ custom post type.
+require get_template_directory().'/post-types/faq.php';
 
 require_once('inc/acf/setup.php');
 
