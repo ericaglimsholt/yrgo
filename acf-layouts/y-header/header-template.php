@@ -6,8 +6,6 @@ $categories = get_categories( array(
 ));
 ?>
 
-
-
 <!-- Closes container div -->
 </div>
 
@@ -20,7 +18,7 @@ $categories = get_categories( array(
         <h2 class="start"><?= $this->getStartTitle() ?></h2>
         <ul>
           <?php foreach ($categories as $category): ?>
-               <li class="category"><?php  echo $category->name ?></li>
+            <li class="category"><?php  echo $category->name ?></li>
           <?php endforeach; ?>
         </ul>
       </div>
