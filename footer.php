@@ -126,19 +126,23 @@
 <?php else: ?>
 
 <div class="footer">
-  <video class="footer-image" src="<?php echo get_template_directory_uri() ?>/assets/img/footer_yrgo.mp4" autoplay="">
+  <video loop class="footer-image" src="<?php echo get_template_directory_uri() ?>/assets/img/footer_yrgo.mp4" autoplay="">
 
   </video>
   <div class="container">
     <div class="row">
       <div class="col-md-12">
         <div class="footer-left">
+          <div class="img-social">
+            <img class"social-media-footer" src="<?php echo get_template_directory_uri() ?>/assets/img/logo.png" alt="">
+          </div>
           <p>© 2017 Yrgo</p>
         </div>
 
         <div class="footer-right">
           <div class="img-social">
-            <img class"social-media-footer" src="<?php echo get_template_directory_uri() ?>/assets/img/Facebook.svg" alt="">
+            <a href="https://www.facebook.com/yrgogoteborg"><img class"social-media-footer" src="<?php echo get_template_directory_uri() ?>/assets/img/Facebook.svg" alt=""></a>
+
             <img class"social-media-footer" src="<?php echo get_template_directory_uri() ?>/assets/img/LinkedIn.svg" alt="">
             <img class"social-media-footer" src="<?php echo get_template_directory_uri() ?>/assets/img/Instagram.svg" alt="">
           </div>
