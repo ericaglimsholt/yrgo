@@ -6,7 +6,7 @@ add_action('init', function () {
             'add_new_item' => __('Lägg till ny fråga'),
             'edit_item' => __('Editera frågor'),
             'add_new' => __( 'Lägg till frågor'),
-            'name' => __('Frågor'),
+            'name' => __('FAQ'),
             'search_items' => __('Sök på frågor'),
             'singular_name' => __('Fråga'),
         ],
