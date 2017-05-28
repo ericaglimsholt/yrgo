@@ -123,12 +123,17 @@
 
 .s-follow-educations{
   text-align: center;
-  display: none;
+  /*display: none;*/
 }
 
 .s-follow-educations h3{
   margin-top: 15px;
   color: #FFFFFF;
+}
+
+.s-follow-educations img{
+  height: 200px;
+  width: 200px;
 }
 
 .s-follow-educations a:Hover{
@@ -199,30 +204,49 @@
 
 }
 
+
+
+
+
+
+
+
+
+
 .s-category {
   font-family: Gravur;
   color: #F52A3B;
 }
 
-.s-category p  {
+.s-category div p  {
   margin: 3px;
   font-size: 25px;
 }
 
-.s-category .bold  {
+.s-category-categorys .bold  {
   font-weight: bold;
 }
 
-.s-category h2{
+.s-category-educations {
+  display: none;
+}
+
+.s-category-categorys:Hover {
+  opacity: 0.8;
+  cursor: pointer;
+}
+
+.s-category-title h2{
+  font-family: Gravur;
+  color: #F52A3B;
   font-size: 47px;
   margin-top: 20px;
   margin-bottom: 30px;
 }
 
-.s-category-show:Hover {
-  opacity: 0.8;
-  cursor: pointer;
- }
+.s-category-educations {
+    font-size: 25px;
+}
 
 .s-exams h2 {
   font-family: Gravur;
@@ -402,7 +426,6 @@ hr {
 }
 
 .blue {
-  height: 280px;
   background: blue;
 }
 .green {

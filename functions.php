@@ -79,3 +79,11 @@ add_filter( 'nav_menu_link_attributes', function($atts) {
         $atts['class'] = "nav-item";
         return $atts;
 }, 100, 1 );
+
+
+add_action('admin_init', 'reg_tax');
+
+function reg_tax() {
+		register_taxonomy_for_object_type('category', 'page');
+		add_post_type_support('page', 'category');
+}
