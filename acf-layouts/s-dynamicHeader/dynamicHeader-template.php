@@ -10,14 +10,6 @@ $categorys = get_posts([
 ]); ?>
 
 <?= get_sub_field('link') ?>
-<?php
-// echo get_permalink();
-// $path = home_url() . '?' . get_post_type() . '=' . $this->getCategoryField() . '&';
-// echo $path;
-// echo home_url();
-// echo get_post_type();
-// echo str_replace("/=/", "/d/", get_permalink());
- ?>
 
 <div class="container-fluid marginTop">
 
