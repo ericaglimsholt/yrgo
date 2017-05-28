@@ -142,7 +142,7 @@
         <div class="footer-right">
           <div class="img-social">
             <a href="https://www.facebook.com/yrgogoteborg"><img class"social-media-footer" src="<?php echo get_template_directory_uri() ?>/assets/img/Facebook.svg" alt=""></a>
-            <img class"social-media-footer" src="<?php echo get_template_directory_uri() ?>/assets/img/LinkedIn.svg" alt="">
+            <img class"social-media-footer" src="<?php echo get_template_directory_uri() ?>/assets/img/Linkedin.svg" alt="">
             <img class"social-media-footer" src="<?php echo get_template_directory_uri() ?>/assets/img/Instagram.svg" alt="">
           </div>
           <a href="http://www.clienterica2.nu/yrgo/kontakt/">

@@ -10,7 +10,7 @@ add_action('init', function () {
             'search_items' => __('Sök sidor'),
             'singular_name' => __('Yrgo'),
         ],
-        'menu_icon' => 'dashicons-universal-access',
+        'menu_icon' => 'http://www.clienterica2.nu/wp-content/uploads/2017/05/Yrgo-1-e1495991850249.png',
         'menu_position' => 2,
         'public' => true,
         'taxonomies'  => array( 'category' ),

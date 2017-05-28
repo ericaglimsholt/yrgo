@@ -44,17 +44,16 @@ $yrgo-red: #FD2A3A;
       }
     }
 
-
     ul {
       list-style: none;
       padding: 0;
       margin: 0;
-
-      li.education {
-        display: none;
+      
+      a {
+        color: white;
       }
 
-      li {
+      li, li.education {
         font-size: 25px;
         font-family: 'Gravur', sans-serif;
         padding-left: 1em;
