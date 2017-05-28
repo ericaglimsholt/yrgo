@@ -20,7 +20,7 @@
             'field'    => 'slug',
             'terms'    =>  $category->slug,
           ),
-        );
+        ));
       $query = new WP_Query($args);
     ?>
 
