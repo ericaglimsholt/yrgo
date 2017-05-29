@@ -121,9 +121,7 @@ Template Post Type: Education
                   <?php endif; ?>
             <?php endwhile; endif?>
           </div>
-
-
-
+      </div>
       </div>
 
 <?php get_footer(); ?>
