@@ -13,6 +13,8 @@ add_action('init', function () {
         'menu_icon' => 'dashicons-groups',
         'menu_position' => 10,
         'public' => true,
+        'supports' => array( 'title', 'editor', 'thumbnail' ),
         'taxonomies'  => array( 'category' ),
+
     ]);
 });

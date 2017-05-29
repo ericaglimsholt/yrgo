@@ -100,30 +100,30 @@ Template Post Type: Education
         </div>
         <div class="col-md-6">
           <h3>ANSVARIGA UTBILDARE</h3>
-          <?php if( have_rows('responsible_teachers', $post->ID) ): ?>
-            <?php while( have_rows('responsible_teachers', $post->ID) ): the_row(); ?>
-              <?php echo $sub = the_sub_field('name_employee'); ?>
-              <h3><?php var_dump($sub); ?></h3>
-              <?php wp_reset_postdata(); // IMPORTANT - reset the $post object so the rest of the page works correctly ?>
-            <?php endwhile; ?>
-          <?php endif; ?>
 
-          <?php
+          <div class="responsible-teachers">
+            <?php if( have_rows('responsible_teachers') ): ?>
+              <?php while( have_rows('responsible_teachers') ): the_row();   ?>
+                  <?php
+                  $posts = get_sub_field('choose_employee');
+                  if( $posts ): ?>
+                    <?php foreach( $posts as $post): // variable must be called $post (IMPORTANT) ?>
+                      <div class="col-md-6">
+                        <div class="content-teachers">
+                          <?php the_post_thumbnail('thumbnail');  ?>
+                          <h4><?php echo $post->post_title; ?></h4>
+                        </div>
 
-          $post_object = get_field('project_name');
-          if( $post_object ): ?>
-            <div>
-    	         <h4><?php echo get_the_title($post_object->ID); ?></h4>
-               <span>Post Object Custom Field: <?php the_field('project_description', $post_object->ID); ?></span>
-             </div>
-             <?php wp_reset_postdata(); // IMPORTANT - reset the $post object so the rest of the page works correctly ?>
-          <?php endif; ?>
-        </div>
+                      </div>
+
+                    <?php endforeach; ?>
+                    <?php wp_reset_postdata(); // IMPORTANT – reset the $post object so the rest of the page works correctly ?>
+                  <?php endif; ?>
+            <?php endwhile; endif?>
+          </div>
+
+
+
       </div>
-
-
-
-
-
 
 <?php get_footer(); ?>

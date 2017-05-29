@@ -397,6 +397,38 @@ img.management-logotype {
   }
 }
 
+.col-md-6 {
+  .responsible-teachers {
+    background-color: #FFF7F7;
+    padding-top: 20px;
+    padding-bottom: 20px;
+
+    .content-teachers{
+      justify-content: center;
+      width: 60%;
+      margin: 0 auto;
+
+      img {
+        border-radius: 120px;
+        margin-bottom: 10px;
+        width: 100%;
+        height: auto;
+      }
+
+      h4 {
+        font-family: 'Gravur', sans-serif;
+        font-size: 18px;
+        line-height: 23px;
+        text-align: center;
+      }
+    }
+
+
+  }
+}
+
+
+
 
 
 
