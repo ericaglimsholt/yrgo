@@ -19,16 +19,16 @@
               <div class="container">
                 <div class="row s-newsContent">
 
-                  <div class="col-12">
+                  <div class="col-md-12">
                     <p class="headline"><?php print get_sub_field('headline')?></p>
                   </div>
 
-                  <div class="col-6">
+                  <div class="col-md-6">
                     <p><?php print get_sub_field('content')?></p>
                   </div>
 
-                    <div class="col-4">
-                      <div class="reserve-calender col-9">
+                    <div class="col-md-4">
+                      <div class="reserve-calender col-md-9">
 
                         <div class="row">
                           <p class="s-newsContentTitleMore">Mer Aktiviteter</p>
@@ -40,7 +40,7 @@
                         </div>
 
                         <div class="row">
-                          <div class="col-2 reserve-arrows split">
+                          <div class="col-md-2 reserve-arrows split">
                             <p><</p>
                             <p>Juni</p>
                             <p>></p>
@@ -50,11 +50,14 @@
                       </div>
 
                       <div class="row s-newsContentList">
+                        <div class="col-12">
+
                         <?php for ($y=0; $y < 4; $y++) { ?>
                           <a href="<?php echo add_query_arg( 'ID', $activities[$y]->ID, get_permalink() ); ?>">
                             <p><?=$activities[$y]->post_title?></p>
                           </a>
                         <?php } ?>
+                        </div>
                       </div>
 
 

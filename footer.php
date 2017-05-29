@@ -75,12 +75,24 @@
 
   <div class="container">
     <div class="row">
-      <div class="col-md-12">
+      <div class="col-md-12 hided">
         <div class="row footer-studentweb-content">
           <div class="col-3">
             <p><b>Kontakta oss</b></p>
             <p>Telefon: 031 - 367 31 00</p>
             <p>Fullständiga kontaktuppgifter</p>
+            <div class="row">
+              <div class="col-12">
+                <div class="row">
+                  <img class="socialMedia" src="<?php echo get_template_directory_uri() ?>/assets/img/Facebook.svg"/>
+                  <img class="socialMedia" src="<?php echo get_template_directory_uri() ?>/assets/img/Instagram.svg"/>
+                  <img class="socialMedia" src="<?php echo get_template_directory_uri() ?>/assets/img/Linkedin.svg"/>
+
+                </div>
+
+              </div>
+
+            </div>
           </div>
           <div class="col-3">
             <p><b>Besöksadress</b></p>
