@@ -48,7 +48,7 @@ $yrgo-red: #FD2A3A;
       list-style: none;
       padding: 0;
       margin: 0;
-      
+
       a {
         color: white;
       }
@@ -127,7 +127,11 @@ $yrgo-red: #FD2A3A;
     }
   }
 
-  .links-container {
+  .s-links-CenterColor {
+    display: block !important;
+  }
+
+  div.links-container {
     position: absolute;
     color: white;
 
