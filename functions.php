@@ -89,3 +89,6 @@ function reg_tax() {
 		register_taxonomy_for_object_type('category', 'page');
 		add_post_type_support('page', 'category');
 }
+
+// Sets features image to employee post type
+add_theme_support( 'post-thumbnails', array( 'post','employee' ) );
