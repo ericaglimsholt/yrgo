@@ -3,11 +3,16 @@
 // Register education custom post type.
 require get_template_directory().'/post-types/educations.php';
 
-// Register yrgo custom post type.
-require get_template_directory().'/post-types/yrgo.php';
+//Only admin can see this menues
+global $current_user;
+  if ($current_user->user_login=='admin'){
+		// Register yrgo custom post type.
+		require get_template_directory().'/post-types/yrgo.php';
+		// Register studentwebben custom post type.
+		require get_template_directory().'/post-types/studentWebben.php';
 
-// Register studentwebben custom post type.
-require get_template_directory().'/post-types/studentWebben.php';
+  }
+
 
 // Register news custom post type.
 require get_template_directory().'/post-types/news.php';
