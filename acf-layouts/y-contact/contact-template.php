@@ -6,8 +6,11 @@
       <?= $this->getContactform() ?>
     </div>
   </div>
-  <div class="col-md-6">
-    <img src="<?= $this->getLogotype() ?>" alt="">
-    <?= $this->getContact() ?>
+  <div class="col-md-6 ">
+    <div class="content-info">
+      <img src="<?= $this->getLogotype() ?>" alt="">
+      <?= $this->getContact() ?>
+    </div>
+
   </div>
 </div>

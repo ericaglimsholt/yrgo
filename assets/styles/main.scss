@@ -437,6 +437,69 @@ img.management-logotype {
     line-height: 72px;
     color: $yrgo-red;
   }
+
+  .contact-form {
+    input[name=your-name], input[name=your-email] {
+      border-top: none;
+      border-left: none;
+      border-right: none;
+      border-bottom: 1px solid $yrgo-red;
+      font-family: 'Gravur', sans-serif;
+      width: 100%;
+      margin-bottom: 10px;
+
+      &:focus {
+        outline: none;
+      }
+    }
+
+    textarea[name=your-message] {
+      font-family: 'Gravur', sans-serif;
+      background-color: #F3F1EE;
+      border: none;
+      width: 100%;
+      border-radius: 10px;
+      padding-left: 10px;
+
+      &:focus {
+        outline: none;
+      }
+    }
+
+    input[type=submit] {
+      font-family: 'Gravur', sans-serif;
+      font-size: 25px;
+      text-transform: uppercase;
+      background-color: $yrgo-red;
+      color: white;
+      border: none;
+      border-radius: 250px;
+      padding-top: 28px;
+      padding-bottom: 28px;
+      padding-right: 10px;
+      padding-left: 10px;
+      float: right;
+
+      &:focus {
+        outline: none;
+      }
+    }
+  }
+
+  .content-info {
+    width: 50%;
+    margin: 0 auto;
+    margin-top: 20%;
+
+    img {
+      width: 100%;
+    }
+
+    p {
+      font-family: 'Gravur', sans-serif;
+    }
+  }
+
 }
 
 
