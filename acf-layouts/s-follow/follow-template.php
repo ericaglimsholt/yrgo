@@ -23,7 +23,8 @@
 
           <?php foreach ($educations as $education): ?>
             <?php $links = get_field_objects($education->ID);
-            foreach ($links['education']['value'] as $link):?>
+            $linksFor = $links['education']['value'];
+            foreach ($linksFor as $link):?>
 
               <div class="s-follow-educations">
                 <a href="<?=$link['link']?>">
