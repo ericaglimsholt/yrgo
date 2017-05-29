@@ -5,22 +5,36 @@
 <script>
   let onlyText = document.querySelector('.onlyText');
   let allImg = document.querySelectorAll('.removeImg');
+  let removeTag = document.querySelectorAll('.removeTag');
+
   let allAtags = document.querySelectorAll('a');
   let allPtags = document.querySelectorAll('p');
   let allH2tags = document.querySelectorAll('h2');
+  let allH3tags = document.querySelectorAll('h3');
+  let allImgTags = document.querySelectorAll('img');
+  let allRow = document.querySelectorAll('.row');
+  let onlyTextLeft = document.querySelectorAll('.onlyTextLeft');
+  let sNewsList = document.querySelectorAll('.s-news-list');
+  let textOnlyOneColumn = document.querySelectorAll('.textOnlyOneColumn');
+  let textOnlyTemp = document.querySelectorAll('.textOnlyTemp');
 
 
-
-  // console.log(allAtags);
 
   onlyText.addEventListener("click", function (e) {
 
     // display text only
     if (this.dataset.check == "true") {
+      // console.log(this);
+      this.innerHTML = "Bild sida";
       // console.log('run');
       for (i = 0; i < allImg.length; i++) {
         allImg[i].style.backgroundImage = "";
         allImg[i].removeAttribute("class");
+      }
+
+      for (i = 0; i < allRow.length; i++) {
+        allRow[i].style.backgroundImage = "";
+        allRow[i].removeAttribute("class");
       }
 
       for (i = 0; i < allAtags.length; i++) {
@@ -28,12 +42,49 @@
       }
 
       for (i = 0; i < allPtags.length; i++) {
+        // console.log(allPtags);
         allPtags[i].style.color = "black";
+        allPtags[i].style.padding = "0";
+        allPtags[i].style.fontSize = "15";
+
+
       }
 
       for (i = 0; i < allH2tags.length; i++) {
         allH2tags[i].style.color = "black";
       }
+
+      for (i = 0; i < allH3tags.length; i++) {
+        allH3tags[i].style.color = "black";
+        allH3tags[i].style.textAlign = "left";
+
+      }
+
+      for (i = 0; i < allImgTags.length; i++) {
+        allImgTags[i].style.display='none';
+      }
+
+      for (i = 0; i < removeTag.length; i++) {
+        removeTag[i].style.display='none';
+      }
+
+      for (i = 0; i < onlyTextLeft.length; i++) {
+        onlyTextLeft[i].className = "container s-follow";
+      }
+
+      for (i = 0; i < sNewsList.length; i++) {
+        sNewsList[i].className = "";
+        sNewsList[i].style.fontSize='10px';
+      }
+
+      for (i = 0; i < textOnlyOneColumn.length; i++) {
+        textOnlyOneColumn[i].style.columnCount='1';
+      }
+      for (i = 0; i < textOnlyTemp.length; i++) {
+        textOnlyTemp[i].style.display='block';
+      }
+
+
 
       this.dataset.check = "false";
     } else {

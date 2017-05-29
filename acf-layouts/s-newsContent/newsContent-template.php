@@ -24,7 +24,7 @@
                 </div>
 
                 <div class="row">
-                  <div class="col-12 s-newsContentContent">
+                  <div class="col-12 s-newsContentContent textOnlyOneColumn">
                     <?= get_sub_field('content')?>
                   </div>
                 </div>

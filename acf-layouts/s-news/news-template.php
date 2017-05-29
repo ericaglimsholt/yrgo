@@ -35,7 +35,7 @@
               <a class="s-news-link" href="<?php echo add_query_arg( 'ID', $education->ID, get_home_url() . "/?" . get_post_type() . "=nyhet" ); ?>">
                 <p class="s-news-list-header"><?php echo $education->post_title ?></p>
               </a>
-              <hr align="left" style="height:7px;" />
+              <hr class="removeTag" align="left" style="height:7px;" />
 
             </div>
 

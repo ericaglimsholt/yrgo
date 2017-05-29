@@ -49,6 +49,12 @@
   width: 100%;
 }
 
+.textOnlyTemp{
+  font-family: Gravur;
+  font-size: 60px;
+  margin-top: 30px;
+  display: none;
+}
 /*.s-links-CenterColor:Hover {*/
   /*background: linear-gradient( to top, rgba(255,255,255,0), red);*/
   /*opacity: 0.4;*/
