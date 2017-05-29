@@ -10,7 +10,7 @@
 
       <div class="s-header-CenterContent">
         <img class="" src="<?= $this->getLogo() ?>" alt="">
-        <p class=""><?= $this->getSubTitleField() ?></p>
+        <p class="removeTag"><?= $this->getSubTitleField() ?></p>
 
       </div>
 

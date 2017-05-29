@@ -19,7 +19,7 @@
 
         <div class="col-12">
           <div class="row split">
-            <p class="s-follow-arrow" data-direction="0"><</p>
+            <p class="s-follow-arrow removeTag" data-direction="0"><</p>
 
           <?php foreach ($educations as $education): ?>
             <?php $links = get_field_objects($education->ID);
@@ -35,7 +35,7 @@
             <?php endforeach; ?>
           <?php endforeach; ?>
 
-          <p class="s-follow-arrow" data-direction="1">></p>
+          <p class="s-follow-arrow removeTag" data-direction="1">></p>
 
           </div>
 
