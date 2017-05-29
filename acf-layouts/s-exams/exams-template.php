@@ -7,11 +7,11 @@
     <div class="row">
 
 
-      <div class="col-6 s-exams-content">
+      <div class="col-sm-12 col-md-6 s-exams-content">
         <p><?= get_sub_field('content')?></p>
       </div>
 
-      <div class="col-4">
+      <div class="col-sm-12 col-md-4">
         <ul>
           <li><a href="#">Anmälan</a></li>
           <li><a href="#">Salar</a></li>

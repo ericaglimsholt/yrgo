@@ -52,44 +52,15 @@
 </div>
 
 
-
-
-
 <div class="container">
 
   <script>
-//
-//   let educations = document.querySelectorAll('.s-follow-educations');
-//   let arrows = document.querySelectorAll('.s-follow-arrow');
-//   let y = 0;
-//
-// let startNumber = Math.round(educations.length/2);
-//
-// if (startNumber < 3) {
-//   startNumber = 0;
-// }
-//
-// console.log(educations);
-// // console.log(startNumber);
-//
-//
-//
-// for (var i = 0; i < arrows.length; i++) {
-//   arrows[i].addEventListener("click", function (e) {
-//     // console.log(this.dataset.direction);
-//     // console.log(y);
-//     y=y+1;
-//   });
-//
-//
-//   for (x = startNumber; x < startNumber + 3; x++) {
-//     // console.log(y);
-//     educations[x].style.display = "block";
-//   }
-//
-// }
-//
+let follows = document.querySelectorAll('.s-follow-educations');
 
-
-
+// remove links if the screen is small
+window.addEventListener('resize', function() {
+  if (window.innerWidth <= 768) {
+    follows[0].style.display = 'block';
+}
+}, true);
   </script>

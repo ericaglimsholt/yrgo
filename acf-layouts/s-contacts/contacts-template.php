@@ -10,44 +10,14 @@
     </div>
   </div>
 
-  <div class="row s-category">
-    <div class="col-6">
-      <div class="row s-category-categorys">
-        <p class="bold">|<p>
-        <p>Lärare</p>
-      </div>
-    </div>
-
-    <div class="row">
-      <div class="col-6">
-        <div class="s-category-educations">
-
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class="row s-category">
-    <div class="col-6">
-      <div class="row s-category-categorys">
-        <p class="bold">|<p>
-        <p>Studenthälsa</p>
-      </div>
-    </div>
-
-    <div class="row">
-      <div class="col-6">
-        <div class="s-category-educations">
-
-        </div>
-      </div>
-    </div>
-  </div>
+<div class="row">
+  <div class="col-sm-12 col-md-6">
 
     <div class="row s-category">
       <div class="col-6">
         <div class="row s-category-categorys">
           <p class="bold">|<p>
-          <p>Rektorer</p>
+          <p>Lärare</p>
         </div>
       </div>
 
@@ -83,24 +53,121 @@
       </div>
     </div>
 
+          <div class="row s-category">
+            <div class="col-6">
+              <div class="row s-category-categorys">
+                <p class="bold">|<p>
+                <p>Rektorer</p>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col-6">
+                <div class="s-category-educations">
+                  <p>Svante</p>
+                  <div class="s-contacts-text">
+                    <p>Rektor Byggteknik/Samhällsbyggnad/Teknik</p>
+                    <p>031-367 31 10</p>
+                    <p>svante.bostrom@educ.goteborg.se</p>
+                  </div>
+                  <p>Annika</p>
+                  <div class="s-contacts-text">
+                    <p>Rektor Byggteknik/Samhällsbyggnad/Teknik</p>
+                    <p>031-367 31 10</p>
+                    <p>svante.bostrom@educ.goteborg.se</p>
+                  </div>
+                  <p>Karin</p>
+                  <div class="s-contacts-text">
+                    <p>Rektor Byggteknik/Samhällsbyggnad/Teknik</p>
+                    <p>031-367 31 10</p>
+                    <p>svante.bostrom@educ.goteborg.se</p>
+                  </div>
+                  <p>Robert</p>
+                  <div class="s-contacts-text">
+                    <p>Rektor Byggteknik/Samhällsbyggnad/Teknik</p>
+                    <p>031-367 31 10</p>
+                    <p>svante.bostrom@educ.goteborg.se</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="row s-category">
+            <div class="col-6">
+              <div class="row s-category-categorys">
+                <p class="bold">|<p>
+                <p>Studiehälsa</p>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col-6">
+                <div class="s-category-educations">
+                  <p>Svante</p>
+                  <div class="s-contacts-text">
+                    <p>Rektor Byggteknik/Samhällsbyggnad/Teknik</p>
+                    <p>031-367 31 10</p>
+                    <p>svante.bostrom@educ.goteborg.se</p>
+                  </div>
+                  <p>Annika</p>
+                  <div class="s-contacts-text">
+                    <p>Rektor Byggteknik/Samhällsbyggnad/Teknik</p>
+                    <p>031-367 31 10</p>
+                    <p>svante.bostrom@educ.goteborg.se</p>
+                  </div>
+                  <p>Karin</p>
+                  <div class="s-contacts-text">
+                    <p>Rektor Byggteknik/Samhällsbyggnad/Teknik</p>
+                    <p>031-367 31 10</p>
+                    <p>svante.bostrom@educ.goteborg.se</p>
+                  </div>
+                  <p>Robert</p>
+                  <div class="s-contacts-text">
+                    <p>Rektor Byggteknik/Samhällsbyggnad/Teknik</p>
+                    <p>031-367 31 10</p>
+                    <p>svante.bostrom@educ.goteborg.se</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+  </div>
+  <div class="col-sm-12 col-md-4 s-category-placeholder">
+  </div>
 </div>
-<br>
+
+</div>
+
 
 <div class="container">
 
   <script>
   let expand = document.querySelectorAll('.s-category');
+  let placeholder = document.querySelectorAll('.s-category-placeholder');
+  placeholder=placeholder[0];
+
+
   for (var i = 0; i < expand.length; i++) {
 
     expand[i].addEventListener("click", function (e) {
+      // this.style.opacity='0.5';
+
        let change = this.querySelector('.s-category-educations');
+      //  let changeP = change.querySelector('p');
        let test = this.querySelector('.bold');
 
         if (test.innerHTML === '|') {
+          // this.style.opacity='1';
+          placeholder.innerHTML=change.innerHTML;
           test.innerHTML="-";
-          change.style.display = 'block';
+          change.style.display = 'none';
           test.style.marginRight = "20px";
           } else {
+          // this.style.opacity='0.5';
+          placeholder.innerHTML='';
           test.innerHTML="|";
           change.style.display = 'none';
           test.style.marginRight = "0px";

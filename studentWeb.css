@@ -205,14 +205,40 @@
 
 }
 
+.s-news-mobile{
+  display: none;
+}
 
+.s-news-right{
+  text-align: right;
+}
 
+.s-news-text a{
+  display: flex;
+  justify-content: center;
+  color: #FFFFFF;
+}
 
+.s-news-arrow{
+  font-weight: bold;
+  font-size: 45px;
+  /*display: none;*/
+}
 
+/*.s-news-mobile:Hover{
+  cursor: pointer;
+}*/
 
+.s-news-mobile a:Hover{
+  cursor: pointer;
+  text-decoration: none;
+  color: #F52A3B;
+}
 
-
-
+.s-news-arrow:Hover{
+  opacity: 0.8;
+  color: #F52A3B;
+}
 
 .s-category {
   font-family: Gravur;
@@ -226,10 +252,6 @@
 
 .s-category-categorys .bold  {
   font-weight: bold;
-}
-
-.s-category-educations {
-  display: none;
 }
 
 .s-category-categorys:Hover {
@@ -247,7 +269,22 @@
 
 .s-category-educations {
     font-size: 25px;
+    display: none;
 }
+
+.s-category-placeholder{
+  font-family: Gravur;
+  font-size: 20px;
+  color: #F52A3B;
+}
+
+.s-category-placeholder p:Hover{
+  cursor: pointer;
+  opacity: 0.6;
+}
+
+
+
 
 .s-exams h2 {
   font-family: Gravur;
@@ -391,10 +428,21 @@
 .studentwebb-footer-logo p {
   margin-left: 20px;
 }
-.s-category .s-contacts-text p{
+.s-category-educations p{
   color:black;
   font-size: 15px;
   margin: 0px;
+}
+
+.s-contacts-text{
+  color:black;
+  font-size: 15px;
+  margin: 0px;
+}
+
+.s-category-educations p:Hover{
+  cursor: pointer;
+  opacity: 0.7;
 }
 
 
@@ -414,6 +462,7 @@
     }
 
     .s-news-list {
+      /*background: blue;*/
       display: none;
     }
     .reserve-date p{
@@ -434,8 +483,54 @@
     .reserve-button{
       float: right;
     }
+    .s-exams{
+      margin: 10px!important;
+    }
+
+    .s-exams ul {
+      float: left;
+    }
+
+    .s-category-placeholder{
+      margin: 20px;
+    }
+
+    .s-links-CenterContent{
+      height: 200px;
+    }
+
+    .s-news-text p{
+      margin-top: 15px;
+      font-size: 25px !important;
+    }
+    .s-news-list{
+      display: none;
+    }
+    .s-news-mobile{
+      display: block;
+    }
+
+    .line{
+      margin-bottom: 20px;
+    }
+
+    .hided{
+      display: none;
+      margin-top: 20px;
+    }
+    .s-follow-educations{
+      display: none;
+    }
+
+
 }
 
+.socialMedia{
+  height: 16px;
+  width: 16px;
+  margin: 40px 20px 20px 20px;
+  background: black;
+}
 
 .line {
   height: 5px;
@@ -452,7 +547,7 @@
 }
 
 .marginTop {
-  margin-top: 40px;
+  margin-top: 2%;
 }
 
 hr {
@@ -474,8 +569,8 @@ hr {
   background: blue;
 }
 .green {
-  height: 280px;
   background: green;
+  border: 1px solid black;
 }
 .orange {
   background: orange;
