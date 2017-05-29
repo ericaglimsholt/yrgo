@@ -484,6 +484,31 @@ img.management-logotype {
     }
   }
 
+}
+
+@media screen and (max-width: 768px) and (min-width: 0px) {
+.row-header  {
+  position: inherit;
+
+  .header-img {
+    width: auto;
+    height: 80%;
+  }
+}
+
+.footer {
+  max-height: 150px;
+  min-height: 150px;
+  .footer-left, .footer-right  {
+    height: 150px;
+  }
+}
+
+.textblock, .faq h1 {
+  margin-top: 90px;
+}
+
+
 
 
 }
