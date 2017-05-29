@@ -24,6 +24,8 @@
 
     // display text only
     if (this.dataset.check == "true") {
+      // console.log(this);
+      this.innerHTML = "Bild sida";
       // console.log('run');
       for (i = 0; i < allImg.length; i++) {
         allImg[i].style.backgroundImage = "";
