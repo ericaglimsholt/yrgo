@@ -24,7 +24,7 @@
           <?php foreach ($educations as $education): ?>
             <?php $links = get_field_objects($education->ID);
             $linksFor = $links['education']['value'];
-            print_r($linksFor); 
+            // print_r($linksFor); 
             foreach ($linksFor as $link):?>
 
               <div class="s-follow-educations">
