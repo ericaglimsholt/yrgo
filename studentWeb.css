@@ -42,8 +42,9 @@
 }
 
 .s-links-CenterColor{
-  transition: opacity 0.5s ease-in-out;
-  opacity: 0;
+  /*transition: background 0.5s ease-in-out;
+  background-color: blue;*/
+  /*transition: background 1s;*/
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -52,19 +53,6 @@
   width: 100%;
 }
 
-.s-links-CenterColor h2 {
-  font-family: Gravur;
-  z-index: 10000;
-  opacity: 1 !important;
-  color: #FFFFFF;
-}
-
-.s-links-CenterColor:Hover{
-  opacity: 1;
-}
-
-
-
 .textOnlyTemp{
   font-family: Gravur;
   font-size: 60px;
@@ -72,6 +60,10 @@
   display: none;
 }
 
+.s-links-CenterColor h2 {
+  font-family: Gravur;
+  color: #FFFFFF;
+}
 
 .s-links-CenterContent a:Hover {
   text-decoration: none;
@@ -590,4 +582,7 @@ hr {
 .green {
   background: green;
   border: 1px solid black;
+}
+.orange {
+  background: orange;
 }
