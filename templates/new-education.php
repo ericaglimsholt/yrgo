@@ -43,6 +43,7 @@ Template Post Type: Education
       <div class="row" >
         <div class="col-md-3">
           <h3>KURSER</h3>
+          <img class="image-wheel" src="<?php the_field('course_image_wheel'); ?>" alt="">
         </div>
         <div class="col-md-3">
           <h3>KURSNAMN</h3>
