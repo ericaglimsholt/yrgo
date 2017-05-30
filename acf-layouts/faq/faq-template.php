@@ -14,9 +14,10 @@
             <div class="col-md-6 faq-col">
                 <div class="faq-question">
                   <h3><?php echo $post->post_title; ?></h3>
-                </div>
+
                 <div class="faq-answere">
                   <p><?php echo $post->post_content; ?></p>
+                </div>
                 </div>
                 <img class="education-img" src="<?= get_sub_field('image_single') ?>" alt="">
             </div>
@@ -28,12 +29,18 @@
 </div>
 
 <script>
-question = document.querySelectorAll('.faq-question');
+let question = document.querySelectorAll('.faq-question');
+
 for (i = 0; i < question.length; i++) {
+//console.log(question[i]);
   // Show the answere to question
-  document.querySelector('.faq-question').addEventListener("click", function(event){
-    document.querySelector('.faq-answere').style.display='block';
-    event.preventDefault();
+  question[i].addEventListener("click", function(event){
+let answers = this.querySelector('.faq-answere');
+    if ( answers.style.display !== 'block') {
+    this.querySelector('.faq-answere').style.display='block';
+    } else {
+      this.querySelector('.faq-answere').style.display='none';
+    }
   });
 }
 
