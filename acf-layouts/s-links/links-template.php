@@ -27,16 +27,13 @@
 <script>
   links = document.querySelectorAll('.s-links-CenterColor');
   for (i = 0; i < links.length; i++) {
-
     links[i].addEventListener("mouseleave", function (e) {
         this.style.background='';
         // console.log(this.dataset.color);
     });
-
       links[i].addEventListener("mouseenter", function (e) {
           // this.style.transition = "2s ease-in-out";
           this.style.background=  'linear-gradient( to top, rgba(255,255,255,0), ' + this.dataset.color + ')';
       });
   }
-
 </script>
