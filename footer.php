@@ -189,7 +189,7 @@
 <?php else: ?>
 
 <div class="footer">
-  <video loop class="footer-image" src="<?php echo get_template_directory_uri() ?>/assets/img/footer_yrgo.mp4" autoplay="">
+  <video loop class="footer-image" src="<?php echo get_template_directory_uri() ?>/assets/img/footer.mp4" autoplay="">
 
   </video>
   <div class="container">
