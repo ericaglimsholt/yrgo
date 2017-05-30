@@ -2,7 +2,7 @@
 <!-- close container -->
 </div>
 
-<div class="container">
+<div class="container s-margin">
   <div class="row">
     <div class="col-12 s-category-title">
 
@@ -163,13 +163,17 @@
           // this.style.opacity='1';
           placeholder.innerHTML=change.innerHTML;
           test.innerHTML="-";
-          change.style.display = 'none';
+          placeholder.style.visibility = 'visible';
+          placeholder.style.opacity = '1';
+          placeholder.style.marginRight = "20px";
+
           test.style.marginRight = "20px";
           } else {
           // this.style.opacity='0.5';
           placeholder.innerHTML='';
           test.innerHTML="|";
-          change.style.display = 'none';
+          placeholder.style.visibility = 'hidden';
+          placeholder.style.opacity = '0';
           test.style.marginRight = "0px";
           }
   });
