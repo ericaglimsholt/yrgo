@@ -1,3 +1,5 @@
+<!-- This is a module that provides a simple image -->
+
 <!-- Closes container div -->
 </div>
 
@@ -14,4 +16,5 @@
   </div>
 </div>
 
+<!-- Start of container for next module -->
 <div class="container">

@@ -1,25 +1,35 @@
+<!-- This is a module that provides contact information for each school -->
+
+<!-- End of container -->
 </div>
+
 <div class="row">
   <?php if( have_rows('school') ): ?>
     <?php while( have_rows('school') ): the_row();   ?>
       <div style="padding:0;" class="col-md-6 school">
-
+        <!-- Outputs title areas of school -->
         <h3><?= get_sub_field('schools_areas') ?></h3>
+        <!-- Outputs image -->
         <img class="school-image" src="<?= get_sub_field('schools_image') ?>" alt="">
       </div>
       <div style="padding:0;" class="col-md-6 school">
         <div class="middle-school">
+          <!-- Outputs logotype -->
           <img class="school-logotype" src="<?= get_sub_field('schools_logotype') ?>" alt="">
+          <!-- Outputs address -->
           <p><?= get_sub_field('schools_address') ?></p>
+          <!-- Outputs reception -->
           <p>Reception: <?= get_sub_field('schools_reception') ?></p>
           <p>Vägbeskrivning:</p>
         </div>
+        <!-- Outputs map -->
         <?php
         $location = get_sub_field('schools_googlemaps');
 
         if( !empty($location) ):
         ?>
         <div class="acf-map">
+          <img class="marker" src="<?= get_sub_field('schools_map') ?>" alt="">
         	<div class="marker" data-lat="<?php echo $location['lat']; ?>" data-lng="<?php echo $location['lng']; ?>"></div>
         </div>
         <?php endif; ?>
