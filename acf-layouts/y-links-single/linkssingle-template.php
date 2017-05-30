@@ -1,4 +1,4 @@
-<!-- This is a module that provides a simple news feed -->
+<!-- This is a module that provides links with image for education -->
 
 <!-- Closes container div -->
 </div>
