@@ -283,7 +283,10 @@ img.management-logotype {
 
   .two-columns {
     column-count: 2;
-    margin-right: 20px;
+
+    p {
+      width: 90%;
+    }
   }
 }
 
