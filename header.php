@@ -34,7 +34,7 @@ $yrgo = array(
 
 <?php
   // TODO rewrite this
-if ($page = 'education') {
+if ($page == 'education') {
   $page = 'yrgo';
 }
 ?>
