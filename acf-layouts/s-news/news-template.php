@@ -54,13 +54,11 @@
 
   <script>
 
-  console.log(window.innerWidth);
   let newsList = document.querySelector('.s-news-list');
   let placeholder = document.querySelector('.s-news-text');
 
   let to = document.querySelector('.s-news-text');
   let news = document.querySelectorAll('.s-news-list a');
-
 
   // remove links if the screen is small
   window.addEventListener('resize', function() {
@@ -76,9 +74,21 @@
       newsList.insertBefore(placeholderA[0], hr[0]);
 
     }
-
-
   }
 }, true);
+
+  //todo Make this a function
+if (screen.width <= 768) {
+  placeholder.append(news[0]);
+
+} else {
+  let placeholderA = document.querySelectorAll('.s-news-text a');
+  let hr = document.querySelectorAll('hr');
+
+  for (var i = 0; i < placeholderA.length; i++) {
+    newsList.insertBefore(placeholderA[0], hr[0]);
+
+  }
+}
 
   </script>
