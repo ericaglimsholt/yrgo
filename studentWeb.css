@@ -259,6 +259,7 @@
 }
 
 .s-category-categorys .bold  {
+  transition: margin-right 1s;
   font-weight: bold;
 }
 
@@ -276,14 +277,16 @@
 }
 
 .s-category-educations {
-    font-size: 25px;
-    display: none;
+  font-size: 25px;
+  display: none;
 }
 
 .s-category-placeholder{
+  transition: visibility 1s, opacity 0.5s ease-out;
   font-family: Gravur;
   font-size: 20px;
   color: #F52A3B;
+  /*visibility: hidden;*/
 }
 
 .s-category-placeholder p:Hover{
@@ -531,6 +534,10 @@
     }
 
 
+}
+
+.s-margin{
+  margin-bottom: 50px;
 }
 
 .socialMedia{
