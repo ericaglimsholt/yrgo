@@ -4,8 +4,7 @@
     <p class="preamble-textblock">
       <?= $this->getPreamble() ?>
     </p>
-
-
+    
     <div class="two-columns">
       <?= $this->getDescription() ?>
     </div>
