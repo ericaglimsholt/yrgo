@@ -92,3 +92,16 @@ function reg_tax() {
 
 // Sets features image to employee post type
 add_theme_support( 'post-thumbnails', array( 'post','employee' ) );
+
+/**
+ * enqueue scripts and styles
+ *
+ */
+
+function nr_load_scripts() {
+
+	wp_register_script('googlemaps', 'https://maps.googleapis.com/maps/api/js?key=AIzaSyCBKni9WfIvXyMwDe_a-KT6GBVQsHHnr28',null,null,true);  
+	wp_enqueue_script('googlemaps');
+
+}
+add_action( 'wp_enqueue_scripts', 'nr_load_scripts' );

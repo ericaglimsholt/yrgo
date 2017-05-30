@@ -499,8 +499,70 @@ img.management-logotype {
       font-family: 'Gravur', sans-serif;
     }
   }
-
 }
+
+.col-md-6 .school {
+  padding: 0;
+}
+
+.school {
+  padding: 0;
+  .school-image {
+    width: 100%;
+  }
+
+  h3 {
+    font-family: 'Gravur', sans-serif;
+    font-size: 25px;
+    line-height: 23px;
+    position: absolute;
+    margin: 30px;
+    color: white;
+
+    &::before {
+      content: "I";
+      font-size: 25px;
+      color: white;
+      padding-right: 5px;
+    }
+  }
+
+  .middle-school {
+    width: 50%;
+    margin: 0 auto;
+
+    .school-logotype {
+      width: 100%;
+    }
+
+    p {
+      font-family: 'Gravur', sans-serif;
+    }
+
+
+  }
+
+  .acf-map {
+    width: 100%;
+    height: 304px;
+    border: #ccc solid 1px;
+    margin: 20px 0;
+    margin-bottom: 0;
+  }
+
+  /* fixes potential theme css conflict */
+  .acf-map img {
+     max-width: inherit !important;
+  }
+}
+
+div.col-md-6 .school {
+  padding: 0 !important;
+}
+
+
+
+
 
 
 
