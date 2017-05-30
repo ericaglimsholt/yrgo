@@ -23,13 +23,14 @@
           <p>Vägbeskrivning:</p>
         </div>
         <!-- Outputs map -->
+        <img class="marker" src="<?= get_sub_field('schools_map') ?>" alt="">
         <?php
         $location = get_sub_field('schools_googlemaps');
 
         if( !empty($location) ):
         ?>
         <div class="acf-map">
-          <img class="marker" src="<?= get_sub_field('schools_map') ?>" alt="">
+
         	<div class="marker" data-lat="<?php echo $location['lat']; ?>" data-lng="<?php echo $location['lng']; ?>"></div>
         </div>
         <?php endif; ?>
