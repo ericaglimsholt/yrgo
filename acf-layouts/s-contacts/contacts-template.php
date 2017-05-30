@@ -159,7 +159,7 @@
       //  let changeP = change.querySelector('p');
        let test = this.querySelector('.bold');
 
-        if (test.innerHTML === '|') {
+        if (test.innerHTML != '-') {
           // this.style.opacity='1';
           placeholder.innerHTML=change.innerHTML;
           test.innerHTML="-";
@@ -173,7 +173,7 @@
           placeholder.innerHTML='';
           test.innerHTML="|";
           placeholder.style.visibility = 'hidden';
-          placeholder.style.opacity = '0';
+          placeholder.style.opacity = '0.1';
           test.style.marginRight = "0px";
           }
   });

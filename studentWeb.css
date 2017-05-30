@@ -282,7 +282,7 @@
 }
 
 .s-category-placeholder{
-  transition: visibility 1s, opacity 0.5s ease-out;
+  transition: visibility 1s, opacity 0.5s ease-in-out;
   font-family: Gravur;
   font-size: 20px;
   color: #F52A3B;
