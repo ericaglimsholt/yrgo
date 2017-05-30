@@ -23,7 +23,7 @@
           <p>Vägbeskrivning:</p>
         </div>
         <!-- Outputs map -->
-        <img class="marker" src="<?= get_sub_field('schools_map') ?>" alt="">
+        <img class="marker" src="<?= get_sub_field('schools_map') ?>" alt="" style="width:100%;">
         <?php
         $location = get_sub_field('schools_googlemaps');
 
